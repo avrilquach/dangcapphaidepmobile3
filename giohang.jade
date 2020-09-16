@@ -1,0 +1,194 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    #wrapper_mobile
+      // Header
+      header#header.pad40_20.header2
+        .nav-top
+          .container
+            .row.align-items-center.justify-content-between
+              .col-1
+                a.menu-back(href='javascript:void(0)')
+                  i.fas.fa-chevron-left
+              .col-8
+                h2 Giỏ hàng
+              .col-3.row.align-items-end.justify-content-between
+                .search
+                  a(href='javascript:void(0)')
+                    img(src='img/i-search.png', alt='')
+                .cart
+                  img(src='img/i-cart.png', alt='')
+                  span 5
+      // Cart
+      section.cart
+        .list-cart
+          .head
+            a.back(href='#')
+              i.fas.fa-caret-left
+              | Tiếp tục mua sắm
+          .cart_item
+            .item
+              .img
+                img(src='img/cart2.jpg', alt='')
+                a(href='#')
+                  i.fa.fa-trash
+                  span Xóa
+              .des
+                span.branch SENKA
+                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
+                span.phivanchuyen Phí vận chuyển: Miễn phí
+                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
+                .detail
+                  span.price 5.488.000 đ
+                  input.number(type='number', value='1')
+            .item
+              .img
+                img(src='img/cart2.jpg', alt='')
+                a(href='#')
+                  i.fa.fa-trash
+                  span Xóa
+              .des
+                span.branch SENKA
+                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
+                span.phivanchuyen Phí vận chuyển: Miễn phí
+                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
+                .detail
+                  span.price 5.488.000 đ
+                  input.number(type='number', value='1')
+            .item
+              .img
+                img(src='img/cart2.jpg', alt='')
+                a(href='#')
+                  i.fa.fa-trash
+                  span Xóa
+              .des
+                span.branch SENKA
+                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
+                span.phivanchuyen Phí vận chuyển: Miễn phí
+                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
+                .detail
+                  span.price 5.488.000 đ
+                  input.number(type='number', value='1')
+          .cart_options
+            .tam-tinh
+              span Tạm tính:
+              span 7.865.000đ
+            .giam-gia
+              span Giảm giá:
+              span -100.000đ
+            .giam-gia-form
+              span Sử dụng mã giảm giá
+              form
+                input(type='text', name='magiamgia', placeholder='Nhập Voucher hoặc mã khuyến mãi để nhận ưu đãi')
+                input(type='submit', value='sử dụng')
+            .diem-tich-luy
+              span
+                i.fas.fa-check-square
+                | Dùng điểm tích lũy
+              span -50.000đ
+            .tong-cong
+              span Tổng cộng:
+              span 7.756.000đ
+          .box-nhan-hang
+            .box-ite
+              span.label Thông tin người mua
+              .form-input
+                input(type='text', name='name', placeholder='Họ và tên')
+                input(type='text', name='phone', placeholder='Số điện thoại(*)')
+            .box-ite
+              span.label Địa chỉ nhận hàng
+              .form-input
+                input(type='text', name='address', placeholder='Nhập số nhà, tên đường')
+                .choose_ite
+                  a(href='javascript:void(0)')
+                    | Chọn Phường, Xã
+                    i.fas.fa-sort-down
+                  .choose_ite_box
+                    form.search_ite_box
+                      input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+                      input(type='submit', value='')
+                      i.fa.fa-search
+                    .result_ite_box.result_q
+                      ul
+                        li
+                          a(href='#') Quận 1
+                        li
+                          a(href='#') Quận 2
+                        li
+                          a(href='#') Quận Gò Vấp
+                        li
+                          a(href='#') Quận Phú Nhuận
+            .box-ite
+              .form-input
+                .choose_ite
+                  a(href='javascript:void(0)')
+                    | Chọn Quận
+                    i.fas.fa-sort-down
+                  .choose_ite_box
+                    form.search_ite_box
+                      input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+                      input(type='submit', value='')
+                      i.fa.fa-search
+                    .result_ite_box.result_q
+                      ul
+                        li
+                          a(href='#') Quận 1
+                        li
+                          a(href='#') Quận 2
+                        li
+                          a(href='#') Quận Gò Vấp
+                        li
+                          a(href='#') Quận Phú Nhuận
+                .choose_ite
+                  a(href='javascript:void(0)')
+                    | Chọn Thành Phố
+                    i.fas.fa-sort-down
+                  .choose_ite_box
+                    form.search_ite_box
+                      input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+                      input(type='submit', value='')
+                      i.fa.fa-search
+                    .result_ite_box.result_q
+                      ul
+                        li
+                          a(href='#') Quận 1
+                        li
+                          a(href='#') Quận 2
+                        li
+                          a(href='#') Quận Gò Vấp
+                        li
+                          a(href='#') Quận Phú Nhuận
+          .box-hoa-don
+            a(href='#')
+              i.fas.fa-check-square
+              | Xuất hóa đơn công ty
+            .form-input
+              input(type='text', name='masothue', placeholder='Mã số thuế')
+              input(type='text', name='tencongty', placeholder='Tên công ty')
+            .form-input
+              input(type='text', name='diachicongty', placeholder='Địa chỉ công ty')
+              input(type='text', name='email', placeholder='Email')
+          .box-hinh-thuc-thanh-toan
+            span.label Hình thức thanh toán
+            .box-ite
+              a.orange(href='#')
+                span Thanh toán khi nhận hàng
+                span COD
+              a.green(href='#')
+                span THANH TOÁN ONLINE QUA VNPAY
+                span Bằng thẻ ATM, Visa, Mastercard, JCB
+    .form-box-search(style='display: none')
+      .search__input
+        form#form_s
+          i.fa.fa-search
+          input(type='text', name='search_pro', placeholder='Bạn cần tìm gì hôm nay ?')
+          i.fa.fa-times-circle
+        a.cancelSearch Cancel
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')
