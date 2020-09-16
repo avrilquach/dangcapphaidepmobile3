@@ -2788,7 +2788,10 @@ img {
     align-items: center;
     margin: 15px 0 0 0;
     border-radius: 10px;
-    color: #fff; }
+    color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .popup-addcart .detail a i {
       font-size: 20px; }
     .popup-addcart .detail a span {
