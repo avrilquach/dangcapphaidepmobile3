@@ -84,7 +84,7 @@ img
 
 .pad20_10
   padding: 20px 0 10px 0
-  
+
 .heading
   h1, h2
     font-size: 25px
@@ -3199,7 +3199,8 @@ img
   -ms-flex-pack: justify
   justify-content: space-between
   height: 60px
-  background-color: #ebebeb
+  background-color: #fff
+  box-shadow: 1px 0px 10px rgba(0,0,0,0.15)
   z-index: 8
   left: 0
 
@@ -3221,21 +3222,21 @@ img
     margin: 0 auto
 
   .item
-    width: 25%
+    width: 20%
     text-align: center
     padding: 12px 0
-
+    color: #8f9cab
     i
-      color: #7b7b7b
+      color: #8f9cab
       font-size: 16px
-
     span
       display: block
       font-size: 12px
-      color: #212121
+      color: #8f9cab
 
     &:hover, &.active
-      background: #0f8a0e
+      i, span 
+        color: #fe2c6d
 
     &:hover .item-1, &.active .item-1
       background: url("../img/h1_hover.png") no-repeat center center
@@ -3248,14 +3249,6 @@ img
 
     &:hover .item-4, &.active .item-4
       background: url("../img/h4_hover.png") no-repeat center center
-
-    &:hover
-      span, i
-        color: #fff
-
-    &.active
-      span, i
-        color: #fff
 
 .loc-sp
   background-color: #fff
