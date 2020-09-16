@@ -3037,11 +3037,30 @@ img {
 }
 .popup-addcart h5 {
   text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 10px 0 0 0;
 }
 .popup-addcart .close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 15px;
+  top: 15px;
+}
+.popup-addcart .detail {
+  padding: 15px;
+  border-top: 1px solid #e1e1e1;
+  margin: 15px 0 0 0;
+}
+.popup-addcart .detail .pr {
+  display: flex;
+  align-items: flex-start;
+}
+.popup-addcart .detail .pr img {
+  width: 100px;
+  height: 100px;
+}
+.popup-addcart .detail .pr .top {
+  padding: 0 0 0 15px;
 }
 
 .loc-sp {
