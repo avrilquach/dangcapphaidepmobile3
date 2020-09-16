@@ -3243,15 +3243,35 @@ img
     &:hover .item-4, &.active .item-4
       background: url("../img/h4_hover.png") no-repeat center center
 .popup-addcart
-  position: fixed
-  bottom: 0
-  height: 245px
-  background-color: #fff
-  z-index: 9
-  left: 0
-  border-top-left-radius: 20px
-  border-top-right-radius: 20px
-  width: 100%
+  &.active
+    &::before
+      bottom: 0
+    .addcart
+      bottom: 0
+  &::before
+    content: ""
+    background: rgba(0,0,0,0.15)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 8
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -100%
+  .addcart
+    position: fixed
+    height: 252px
+    background-color: #fff
+    z-index: 9
+    left: 0
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    width: 100%
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -100%
   h5
     text-align: center
     font-family: "Roboto"
@@ -3273,6 +3293,35 @@ img
         height: 100px
       .top
         padding: 0 0 0 15px
+        p.title
+          font-size: 14px
+          color: #4b4b4b
+          font-family: 'Roboto', sans-serif
+          font-weight: 300
+          margin: 0 0 10px 0
+        p.price
+          color: #000
+          font-size: 16px
+          font-weight: 500
+          font-family: 'Roboto', sans-serif
+    a
+      width: 100%
+      height: 50px
+      background-color: #fe2c6d
+      text-align: center
+      line-height: 50px
+      display: flex
+      align-items: center
+      margin: 15px 0 0 0
+      border-radius: 10px
+      color: #fff
+      i
+        font-size: 20px
+      span
+        font-weight: 500
+        font-family: 'Roboto', sans-serif
+        font-size: 16px
+        margin: 0 0 0 10px
 .loc-sp
   background-color: #fff
   position: fixed

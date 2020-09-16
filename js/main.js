@@ -174,4 +174,13 @@ $(document).ready(function() {
             scrollTop: $(this).offset().top-(315)
         }, 1500);
 	});
+	//dangcapphaidep16092020
+	$(".nav-fix-bt-detail .item:nth-child(3) a").click(function(e){
+		$(".popup-addcart").addClass("active");
+		$(".nav-fix-bt-detail").hide();
+	})
+	$(".addcart .close").click(function(e){
+		$(".popup-addcart").removeClass("active");
+		$(".nav-fix-bt-detail").show();
+	})
 });
