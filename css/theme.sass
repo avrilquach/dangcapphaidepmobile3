@@ -153,14 +153,50 @@ img
     background-color: #fff
   #header
     background-color: #0F890E
-
+    &.header-payment-new
+      background-color: #fff
+      .menu-back
+        color: #000
+        i
+          margin: 0 10px 0 0
+        span
+          font-size: 18px
+      .right
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        a
+          width: 28px
+          height: 28px
+          background-color: #e4e4ea
+          text-align: center
+          line-height: 28px
+          position: relative
+          margin: 0 30px 0 0
+          border-radius: 50%
+          &.active
+            background-color: #000
+            i
+              color: #fff
+          &::before
+            position: absolute
+            width: 18px
+            content: ""
+            height: 2px
+            background-color: #e4e4ea
+            right: -25px
+            top: 12px
+          i
+            color: #fff
+          &:last-child
+            margin: 0
+            &::before
+              display: none
     &.header2
       background-color: #0f8a0e
-
       h2
         font-size: 20px
         color: #fff
-
       i
         font-size: 16px
         color: #fff
@@ -1623,9 +1659,10 @@ img
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
-      border-bottom: 1px solid #e1e1e1
-      padding: 10px 15px
-
+      padding: 5px 15px
+      i
+        font-size: 20px
+        color: #000
       h1
         font-size: 20px
 
@@ -1639,34 +1676,27 @@ img
     .cart_item
       background: #fff
       padding: 0 15px
-
+      margin: 0 0 10px 0
       .item
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-        padding: 10px 0
-        border-bottom: 1px solid #e1e1e1
-        -webkit-box-pack: justify
-        -ms-flex-pack: justify
-        justify-content: space-between
-
+        padding: 35px 0 30px 0
+        position: relative
+        .all
+          display: flex
+        .close-item
+          position: absolute
+          top: 10px
+          right: 10px
+          font-size: 1rem
+          color: #4b4b4b
         .img
           width: 30%
           text-align: center
-
           a
             color: #000
-
           i
             margin: 0 5px 0 0
-
           span
             font-size: 12px
-
           img
             display: block
             margin: 0 auto
@@ -1678,9 +1708,11 @@ img
           span
             display: block
 
-            &.branch, &.title
-              font-weight: bold
-
+            &.title
+              color: #4b4b4b
+              font-weight: 300
+              font-family: "Roboto", sans-serif
+              margin: 0 0 5px 0
             &.phivanchuyen
               color: #636363
 
@@ -1690,18 +1722,48 @@ img
         .detail
           span
             display: block
-
             &.price
-              color: #ed2891
+              display: flex
+              align-items: center
               margin: 0 0 5px 0
-              display: block
-
-          .number
-            width: 50px
-            height: 35px
-            border: 1px solid #e0e0e0
-            color: #0f890e
-            text-align: center
+              .price_new
+                color: #000
+                font-family: "Roboto", sans-serif
+                font-size: 16px
+                font-weight: 500
+                margin: 0 10px 0 0
+              .price_old
+                font-size: 13px
+                color: #919697
+          span.number
+            display: flex
+            align-items: center
+            .minius, .plus
+              width: 30px
+              height: 30px
+              border-radius: 5px
+              background-color: #f5f6f6
+              color: #9a9b9f
+              font-size: 20px
+              text-align: center
+            input.number
+              border: none
+              font-size: 18px
+              width: 30px
+              height: 30px
+              text-align: center
+              color: #000
+          span.favourite
+            display: flex
+            align-items: center
+            color: #4b5452
+            font-size: 15px
+            i
+              margin: 0 10px 0 0
+          .option
+            display: flex
+            justify-content: space-between
+            align-items: center
 
     .cart_options
       padding: 0 15px
@@ -3245,7 +3307,7 @@ img
 .popup-addcart
   &.active
     &::before
-      display: block
+      bottom: 0
     .addcart
       bottom: 0
   &::before
@@ -3258,7 +3320,7 @@ img
     -webkit-transition: 0.1s ease-out
     -o-transition: 0.1s ease-out
     transition: 0.1s ease-out
-    display: none
+    bottom: -100%
   .addcart
     position: fixed
     height: 252px

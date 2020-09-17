@@ -183,4 +183,14 @@ $(document).ready(function() {
 		$(".popup-addcart").removeClass("active");
 		$(".nav-fix-bt-detail").show();
 	})
+	var number = parseInt($('input.number').val());
+	$("span.number span.minius").click(function(e){
+		if (number == 0) return;
+		number--;
+		$('input.number').val(number);
+	})
+	$("span.number span.plus").click(function(e){
+		number++;
+		$('input.number').val(number);
+	})
 });

@@ -3,73 +3,35 @@ html
   include inc/head.jade
   body
     #wrapper_mobile
-      // Header
-      header#header.pad40_20.header2
-        .nav-top
-          .container
-            .row.align-items-center.justify-content-between
-              .col-1
-                a.menu-back(href='javascript:void(0)')
-                  i.fas.fa-chevron-left
-              .col-8
-                h2 Giỏ hàng
-              .col-3.row.align-items-end.justify-content-between
-                .search
-                  a(href='javascript:void(0)')
-                    img(src='img/i-search.png', alt='')
-                .cart
-                  img(src='img/i-cart.png', alt='')
-                  span 5
+      include inc/header2.jade
       // Cart
       section.cart
         .list-cart
           .head
             a.back(href='#')
-              i.fas.fa-caret-left
-              | Tiếp tục mua sắm
+              i.icon-Light
           .cart_item
             .item
-              .img
-                img(src='img/cart2.jpg', alt='')
-                a(href='#')
-                  i.fa.fa-trash
-                  span Xóa
-              .des
-                span.branch SENKA
-                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
-                span.phivanchuyen Phí vận chuyển: Miễn phí
-                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
-                .detail
-                  span.price 5.488.000 đ
-                  input.number(type='number', value='1')
-            .item
-              .img
-                img(src='img/cart2.jpg', alt='')
-                a(href='#')
-                  i.fa.fa-trash
-                  span Xóa
-              .des
-                span.branch SENKA
-                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
-                span.phivanchuyen Phí vận chuyển: Miễn phí
-                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
-                .detail
-                  span.price 5.488.000 đ
-                  input.number(type='number', value='1')
-            .item
-              .img
-                img(src='img/cart2.jpg', alt='')
-                a(href='#')
-                  i.fa.fa-trash
-                  span Xóa
-              .des
-                span.branch SENKA
-                span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
-                span.phivanchuyen Phí vận chuyển: Miễn phí
-                span.promotions Khuyến mại: Giảm 3% khi thanh toán online, tối đa 500.000đ
-                .detail
-                  span.price 5.488.000 đ
-                  input.number(type='number', value='1')
+              .all
+                .img
+                  img(src='img/cart2.jpg', alt='')
+                .des
+                  span.title Zell V 30000mg – Viên Uống Nhau Thai Cừu New Zealand
+                  .detail
+                    span.price
+                      span.price_new 5.488.000 đ
+                      span.price_old 2.000.000 đ
+                    .option
+                      span.number
+                        span.minius -
+                        input.number(type='number', value='1')
+                        span.plus +
+                      span.favourite
+                        i.icon-heart
+                        span Mua sau
+              a(href='#').close-item
+                i.icon-close
+                       
           .cart_options
             .tam-tinh
               span Tạm tính:
