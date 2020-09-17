@@ -3600,11 +3600,28 @@ img
       .item
         padding: 15px
         position: relative
+        .box
+          position: absolute
+          top: 20px
+          right: 25px
+          box-shadow: 1px 0 10px rgba(0,0,0,0.10)
+          border-radius: 5px
+          background-color: #fff
+          padding: 15px
+          display: none
+          &.active
+            display: block
+          a
+            display: block
+            color: #747474
+            font-size: 12px
+            line-height: 25px
         p.name
           font-size: 16px
           color: #000
           display: flex
           align-items: center
+          margin: 0 0 10px 0
           span 
             background-color: #0f890e
             font-size: 12px
@@ -3614,8 +3631,8 @@ img
             margin: 0 0 0 10px
         .choose
           position: absolute
-          right: 0
-          top: 0
+          right: 15px 
+          top: 18px
           span
             width: 5px
             height: 5px
@@ -3627,25 +3644,83 @@ img
           font-size: 13px
           color: #606060
           font-weight: 300
-    a
-      width: 100%
-      height: 50px
-      background-color: #fe2c6d
-      text-align: center
-      line-height: 50px
+    a:last-child
       display: flex
-      align-items: center
-      margin: 15px 0 0 0
-      border-radius: 10px
-      color: #fff
       justify-content: center
-      i
-        font-size: 20px
-      span
-        font-weight: 500
-        font-family: 'Roboto', sans-serif
-        font-size: 16px
-        margin: 0 0 0 10px
+      height: 45px
+      color: #686868
+      position: relative
+      line-height: 45px
+      border: 1px dashed #686868
+      margin: 0 15px 15px 15px
+      border-radius: 5px
+      font-weight: 300
+      .icon
+        position: absolute
+        left: 15px
+        top: -2px
+        font-size: 30px
+        color: #686868
+.popup-diachi
+  &.active
+    &::before
+      bottom: 0
+    .all
+      bottom: 0
+  &::before
+    content: ""
+    background: rgba(0,0,0,0.15)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 8
+    -webkit-transition: 0.1s ease-out
+    -o-transition: 0.1s ease-out
+    transition: 0.1s ease-out
+    bottom: -100%
+  .all
+    position: fixed
+    background-color: #fff
+    z-index: 9
+    left: 0
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    width: 100%
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -100%
+  h5
+    text-align: center
+    font-family: "Roboto"
+    font-weight: 500
+    margin: 10px 0 0 0
+  .close
+    position: absolute
+    right: 15px
+    top: 18px
+    font-size: 1rem
+  .detail
+    
+    .pr
+      
+    a:last-child
+      display: flex
+      justify-content: center
+      height: 45px
+      color: #686868
+      position: relative
+      line-height: 45px
+      border: 1px dashed #686868
+      margin: 0 15px 15px 15px
+      border-radius: 5px
+      font-weight: 300
+      .icon
+        position: absolute
+        left: 15px
+        top: -2px
+        font-size: 30px
+        color: #686868   
 .loc-sp
   background-color: #fff
   position: fixed

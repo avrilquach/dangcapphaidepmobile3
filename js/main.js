@@ -199,4 +199,13 @@ $(document).ready(function() {
 	$(".popup-giaohang .close").click(function(e){
 		$(".popup-giaohang").removeClass("active");
 	})
+	$(".popup-giaohang .choose").click(function(e){
+		$(".popup-giaohang .box").toggleClass("active");
+	})
+	$(".popup-giaohang .detail a:last-child").click(function(e){
+		$(".popup-giaohang").removeClass("active");
+		$(".popup-diachi").addClass("active");
+
+	})
+	
 });
