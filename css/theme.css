@@ -183,6 +183,7 @@ img {
 }
 #wrapper_mobile #header.header-payment-new {
   background-color: #fff;
+  border-bottom: 1px solid #efefef;
 }
 #wrapper_mobile #header.header-payment-new .menu-back {
   color: #000;
@@ -213,6 +214,9 @@ img {
 }
 #wrapper_mobile #header.header-payment-new .right a.active i {
   color: #fff;
+}
+#wrapper_mobile #header.header-payment-new .right a.active_line::before {
+  background-color: #000;
 }
 #wrapper_mobile #header.header-payment-new .right a::before {
   position: absolute;

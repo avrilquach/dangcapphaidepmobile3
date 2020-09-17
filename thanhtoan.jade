@@ -1,0 +1,113 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			include inc/header3.jade
+			// Cart
+			section.cart
+				.list-cart
+					.box-dia-chi
+						
+					.box-nhan-hang
+						.box-ite
+							span.label Thông tin người mua
+							.form-input
+								input(type='text', name='name', placeholder='Họ và tên')
+								input(type='text', name='phone', placeholder='Số điện thoại(*)')
+						.box-ite
+							span.label Địa chỉ nhận hàng
+							.form-input
+								input(type='text', name='address', placeholder='Nhập số nhà, tên đường')
+								.choose_ite
+									a(href='javascript:void(0)')
+										| Chọn Phường, Xã
+										i.fas.fa-sort-down
+									.choose_ite_box
+										form.search_ite_box
+											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+											input(type='submit', value='')
+											i.fa.fa-search
+										.result_ite_box.result_q
+											ul
+												li
+													a(href='#') Quận 1
+												li
+													a(href='#') Quận 2
+												li
+													a(href='#') Quận Gò Vấp
+												li
+													a(href='#') Quận Phú Nhuận
+						.box-ite
+							.form-input
+								.choose_ite
+									a(href='javascript:void(0)')
+										| Chọn Quận
+										i.fas.fa-sort-down
+									.choose_ite_box
+										form.search_ite_box
+											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+											input(type='submit', value='')
+											i.fa.fa-search
+										.result_ite_box.result_q
+											ul
+												li
+													a(href='#') Quận 1
+												li
+													a(href='#') Quận 2
+												li
+													a(href='#') Quận Gò Vấp
+												li
+													a(href='#') Quận Phú Nhuận
+								.choose_ite
+									a(href='javascript:void(0)')
+										| Chọn Thành Phố
+										i.fas.fa-sort-down
+									.choose_ite_box
+										form.search_ite_box
+											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
+											input(type='submit', value='')
+											i.fa.fa-search
+										.result_ite_box.result_q
+											ul
+												li
+													a(href='#') Quận 1
+												li
+													a(href='#') Quận 2
+												li
+													a(href='#') Quận Gò Vấp
+												li
+													a(href='#') Quận Phú Nhuận
+					.box-hoa-don
+						a(href='#')
+							i.fas.fa-check-square
+							| Xuất hóa đơn công ty
+						.form-input
+							input(type='text', name='masothue', placeholder='Mã số thuế')
+							input(type='text', name='tencongty', placeholder='Tên công ty')
+						.form-input
+							input(type='text', name='diachicongty', placeholder='Địa chỉ công ty')
+							input(type='text', name='email', placeholder='Email')
+					.box-hinh-thuc-thanh-toan
+						span.label Hình thức thanh toán
+						.box-ite
+							a.orange(href='#')
+								span Thanh toán khi nhận hàng
+								span COD
+							a.green(href='#')
+								span THANH TOÁN ONLINE QUA VNPAY
+								span Bằng thẻ ATM, Visa, Mastercard, JCB
+		.form-box-search(style='display: none')
+			.search__input
+				form#form_s
+					i.fa.fa-search
+					input(type='text', name='search_pro', placeholder='Bạn cần tìm gì hôm nay ?')
+					i.fa.fa-times-circle
+				a.cancelSearch Cancel
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')
