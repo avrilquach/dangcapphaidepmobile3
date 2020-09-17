@@ -1659,7 +1659,7 @@ img
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
-      padding: 5px 15px
+      padding: 7px 15px 5px 15px
       i
         font-size: 20px
         color: #000
@@ -1678,7 +1678,7 @@ img
       padding: 0 15px
       margin: 0 0 10px 0
       .item
-        padding: 35px 0 30px 0
+        padding: 35px 0 20px 0
         position: relative
         .all
           display: flex
@@ -1766,63 +1766,176 @@ img
             align-items: center
 
     .cart_options
-      padding: 0 15px
-      background: #fff
-      display: inline-block
-      width: 100%
-
-      .tam-tinh, .giam-gia
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-pack: justify
-        -ms-flex-pack: justify
-        justify-content: space-between
-        algin-items: center
-        padding: 10px 0
-
-      .tam-tinh span:nth-child(2), .giam-gia span:nth-child(2)
-        font-weight: bold
-
       .giam-gia-form
-        padding: 10px 0
-
-        span
-          color: #288ad6
-          font-weight: bold
-          margin: 0 0 10px 0
+        background-color: #fff
+        padding: 15px
+        margin: 0 0 10px 0
+      .doi-qua
+        background-color: #fff
+        padding: 15px
+        margin: 0 0 10px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        ._l
+          display: flex
+          align-items: flex-start
+          i
+            font-size: 25px
+            margin: 4px 10px 0 0
+        .div
+          span
+            display: block
+            color: #000
+            &:last-child
+              color: #636363
+            span.number
+              display: inline
+              color: #000
+      
+      .tam-tinh 
+        background-color: #fff
+        padding: 15px
+        .item
+          display: flex
+          align-items: center
+          justify-content: space-between
+          span
+            &:nth-child(1)
+              color: #4b4b4b
+              font-weight: 300
+              font-size: 14px
+            &:nth-child(2)
+              color: #000
+              font-size: 14px
+      .tong-cong
+        box-shadow: 1px 0 10px rgba(0,0,0,0.10)
+        padding: 15px
+        background-color: #fff
+        .item
+          display: flex
+          align-items: center
+          justify-content: space-between
+          span
+            &:nth-child(1)
+              color: #4b4b4b
+              font-weight: 300
+              font-size: 14px
+            &:nth-child(2)
+              color: #000
+              font-size: 14px
+        a
+          background-color: #fe2c6d
+          width: 100%
+          text-align: center
+          line-height: 40px
+          color: #fff
+          border-radius: 10px
           display: block
-
+          font-size: 16px
+          margin: 15px 0 0 0
+      .giam-gia-form
+        .head-item
+          display: flex
+          align-items: center
+          font-size: 16px
+          margin: 15px 0 
+          color: #000
+          i
+            font-size: 20px
+          span
+            margin: 0 0 0 10px
+        .icon
+          position: relative
+          &::before
+            content: ""
+            width: calc(100% - 40px)
+            height: 3px
+            background-color: #dddedf
+            position: absolute
+            left: 0
+            top: 14px
+          &::after
+            content: ""
+            width: calc(100% - 200px)
+            height: 3px
+            background-color: #252525
+            position: absolute
+            left: 0
+            top: 14px
+          i
+            position: absolute
+            top: 0
+            right: 0
+            width: 25px
+            height: 25px
+            background-color: #3e4048
+            border-radius: 50%
+            color: #fff
+            text-align: center
+            line-height: 25px
+        .notice
+          margin: 15px 0 0 0
+          .all
+            background: url("../img/giohang/giohang1_02.png") repeat-x
+            height: 89px
+            margin: 0 9px
+            padding: 10px
+            p
+              color: #3c3c3c
+              font-size: 14px
+              font-weight: 300
+              span
+                color: #000
+                font-weight: 500
+          position: relative
+          &::before
+            content: ""
+            position: absolute
+            left: 0
+            background: url("../img/giohang/giohang1_01.png") no-repeat
+            height: 89px
+            width: 9px
+            top: 0
+          &::after
+            position: absolute
+            right: 0
+            content: ""
+            background: url("../img/giohang/giohang1_04.png") no-repeat
+            height: 89px
+            width: 9px
+            top: 0
         form
           position: relative
-
           input
             &[type='text']
               width: 100%
               height: 40px
               border-radius: 5px
               border: 1px solid #e1e1e1
-              color: #636363
+              color: #848484
               padding: 0 160px 0 10px
-
+              font-size: 14px
               &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
-                color: #636363
-
-            &[type='submit']
-              position: absolute
-              top: 0
-              right: 0
-              width: 140px
-              height: 40px
-              color: #fff
+                color: #848484
+          .submit
+            position: absolute
+            top: 0
+            right: 0
+            width: 50px
+            height: 40px
+            line-height: 40px
+            text-align: center
+            input
               border: none
-              text-align: center
-              line-height: 40px
-              border-radius: 5px
-              background: #0f890e
-              text-transform: uppercase
-
+              background: transparent
+              width: 50px
+              height: 40px
+            i
+              position: absolute
+              top: 14px
+              right: 14px
+              color: #848484
       .diem-tich-luy
         padding: 10px 0
         display: -webkit-box
@@ -1845,31 +1958,6 @@ img
           &:nth-child(2)
             font-weight: bold
 
-      .tong-cong
-        padding: 20px
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-        -webkit-box-pack: justify
-        -ms-flex-pack: justify
-        justify-content: space-between
-        margin: 10px 0
-        background: #f5f4f4
-        border-top: 1px solid #e1e1e1
-        border-bottom: 1px solid #e1e1e1
-
-        span
-          &:nth-child(1)
-            font-weight: bold
-
-          &:nth-child(2)
-            font-weight: bold
-            font-size: 18px
-            color: #ed2891
 
     .box-nhan-hang
       background: #fff
