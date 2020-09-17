@@ -205,7 +205,13 @@ $(document).ready(function() {
 	$(".popup-giaohang .detail a:last-child").click(function(e){
 		$(".popup-giaohang").removeClass("active");
 		$(".popup-diachi").addClass("active");
-
 	})
-	
+	$(".popup-diachi .close").click(function(e){
+		$(".popup-giaohang").addClass("active");
+		$(".popup-diachi").removeClass("active");
+	})
+	$(".popup-diachi .back").click(function(e){
+		$(".popup-giaohang").addClass("active");
+		$(".popup-diachi").removeClass("active");
+	})
 });

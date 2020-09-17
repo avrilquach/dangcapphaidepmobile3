@@ -1,11 +1,30 @@
 .popup-diachi
 	.all
+		span.back
+			i.icon-arrow-pre
 		h5 Địa chỉ nhận hàng
 		span.close
 			i.icon-close
 		.detail
 			.pr
-				
-			a(href='javascript:void(0)')
-				.icon +
-				span Thêm địa chỉ mới
+				form
+					.control
+						label Tên người nhận *
+						input.text(type='text' placeholder="Nhập họ và tên người nhận")
+					.control
+						label Số điện thoại *
+						input.text(type='text' placeholder="Nhập số điện thoại người nhận")
+					.control
+						label Địa chỉ nhận hàng *
+						input.text(type='text' placeholder="Nhập số nhà và tên đường")
+					.control
+						label Tỉnh / Thành phố *
+						input.text(type='text' placeholder="Chọn Tỉnh / Thành Phố")
+					.control
+						label Quận / Huyện *
+						input.text(type='text' placeholder="Chọn Quận / Huyện")
+					.control
+						label Phường / Xã *
+						input.text(type='text' placeholder="Chọn Phường Xã")
+					.control
+						input.submit(type="submit" value="Giao đến địa chỉ này")

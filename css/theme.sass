@@ -1680,7 +1680,15 @@ img
       background-color: #fff
       margin: 0 0 10px 0
       padding: 15px
+      i
+        width: 25px
+        height: 25px
+        border: 1px solid #acacac
+        border-radius: 5px
+        margin: 0 10px 0 0
       a
+        display: flex
+        align-items: center
         span
           font-size: 14px
           font-weight: 300
@@ -3695,15 +3703,49 @@ img
     font-family: "Roboto"
     font-weight: 500
     margin: 10px 0 0 0
+  .icon-arrow-pre
+    position: absolute
+    left: 15px
+    top: 18px
+    font-size: 1rem
   .close
     position: absolute
     right: 15px
     top: 18px
     font-size: 1rem
   .detail
-    
+    padding: 15px
+    border-top: 1px solid #e1e1e1
+    margin: 15px 0 0 0
     .pr
-      
+      .control
+        margin: 0 0 20px 0
+        label
+          display: block
+          color: #4b4b4b
+          font-size: 16px
+        input.text
+          width: 100%
+          color: #4b4b4b
+          font-size: 14px
+          font-weight: 300
+          height: 30px
+          border: none
+          border-bottom: 1px solid #a3a3a3
+          &::placeholder
+            font-family: "Roboto", sans-serif
+            font-weight: 300
+        &:last-child
+          margin: 0
+        input.submit
+          background-color: #d0ced1
+          border-radius: 10px
+          height: 45px
+          text-align: center
+          font-size: 16px
+          width: 100%
+          border: none
+          color: #fff
     a:last-child
       display: flex
       justify-content: center
