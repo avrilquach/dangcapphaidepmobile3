@@ -3554,7 +3554,7 @@ img {
   color: #606060;
   font-weight: 300;
 }
-.popup-giaohang .detail a:last-child {
+.popup-giaohang .detail a.end {
   display: flex;
   justify-content: center;
   height: 45px;
@@ -3566,7 +3566,7 @@ img {
   border-radius: 5px;
   font-weight: 300;
 }
-.popup-giaohang .detail a:last-child .icon {
+.popup-giaohang .detail a.end .icon {
   position: absolute;
   left: 15px;
   top: -2px;
