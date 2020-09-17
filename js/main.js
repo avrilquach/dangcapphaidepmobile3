@@ -193,4 +193,10 @@ $(document).ready(function() {
 		number++;
 		$('input.number').val(number);
 	})
+	$(".box-dia-chi ._r a").click(function(e){
+		$(".popup-giaohang").addClass("active");
+	})
+	$(".popup-giaohang .close").click(function(e){
+		$(".popup-giaohang").removeClass("active");
+	})
 });
