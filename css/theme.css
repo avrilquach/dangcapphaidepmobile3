@@ -1625,6 +1625,58 @@ img {
 #wrapper_mobile .cart .list-cart .head a.back i {
   margin: 0 10px 0 0;
 }
+#wrapper_mobile .cart .list-cart .box-thong-tin-xuat-hoa-don, #wrapper_mobile .cart .list-cart .box-ghi-chu-don-hang {
+  background-color: #fff;
+  margin: 0 0 10px 0;
+  padding: 15px;
+}
+#wrapper_mobile .cart .list-cart .box-thong-tin-xuat-hoa-don a span, #wrapper_mobile .cart .list-cart .box-ghi-chu-don-hang a span {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi {
+  display: flex;
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  justify-content: space-between;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._l {
+  display: flex;
+  width: calc(100% - 100px);
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._l i {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  color: #000;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._l h5 {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._l p.name {
+  font-size: 16px;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._l p.address {
+  font-weight: 300;
+  color: #606060;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._r {
+  width: 100px;
+  text-align: right;
+}
+#wrapper_mobile .cart .list-cart .box-dia-chi ._r a {
+  display: block;
+  color: #0f890e;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
 #wrapper_mobile .cart .list-cart .cart_item {
   background: #fff;
   padding: 0 15px;
@@ -1774,6 +1826,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+#wrapper_mobile .cart .list-cart .cart_options .tam-tinh .item:last-child {
+  margin: 0;
 }
 #wrapper_mobile .cart .list-cart .cart_options .tam-tinh .item span:nth-child(1) {
   color: #4b4b4b;
@@ -1803,7 +1859,7 @@ img {
   color: #000;
   font-size: 14px;
 }
-#wrapper_mobile .cart .list-cart .cart_options .tong-cong a {
+#wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_1 a {
   background-color: #fe2c6d;
   width: 100%;
   text-align: center;
@@ -1813,6 +1869,35 @@ img {
   display: block;
   font-size: 16px;
   margin: 15px 0 0 0;
+}
+#wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+}
+#wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a {
+  width: calc(50% - 7.5px);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+@media (max-width: 370px) {
+  #wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a {
+    font-size: 12px;
+  }
+}
+#wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a:nth-child(1) {
+  background-color: #f3f5fc;
+  border-radius: 10px;
+  color: #005aa9;
+}
+#wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a:nth-child(2) {
+  background-color: #fe2c6d;
+  border-radius: 10px;
+  color: #fff;
 }
 #wrapper_mobile .cart .list-cart .cart_options .giam-gia-form .head-item {
   display: flex;

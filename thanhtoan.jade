@@ -8,95 +8,43 @@ html
 			section.cart
 				.list-cart
 					.box-dia-chi
-						
-					.box-nhan-hang
-						.box-ite
-							span.label Thông tin người mua
-							.form-input
-								input(type='text', name='name', placeholder='Họ và tên')
-								input(type='text', name='phone', placeholder='Số điện thoại(*)')
-						.box-ite
-							span.label Địa chỉ nhận hàng
-							.form-input
-								input(type='text', name='address', placeholder='Nhập số nhà, tên đường')
-								.choose_ite
-									a(href='javascript:void(0)')
-										| Chọn Phường, Xã
-										i.fas.fa-sort-down
-									.choose_ite_box
-										form.search_ite_box
-											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
-											input(type='submit', value='')
-											i.fa.fa-search
-										.result_ite_box.result_q
-											ul
-												li
-													a(href='#') Quận 1
-												li
-													a(href='#') Quận 2
-												li
-													a(href='#') Quận Gò Vấp
-												li
-													a(href='#') Quận Phú Nhuận
-						.box-ite
-							.form-input
-								.choose_ite
-									a(href='javascript:void(0)')
-										| Chọn Quận
-										i.fas.fa-sort-down
-									.choose_ite_box
-										form.search_ite_box
-											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
-											input(type='submit', value='')
-											i.fa.fa-search
-										.result_ite_box.result_q
-											ul
-												li
-													a(href='#') Quận 1
-												li
-													a(href='#') Quận 2
-												li
-													a(href='#') Quận Gò Vấp
-												li
-													a(href='#') Quận Phú Nhuận
-								.choose_ite
-									a(href='javascript:void(0)')
-										| Chọn Thành Phố
-										i.fas.fa-sort-down
-									.choose_ite_box
-										form.search_ite_box
-											input(type='text', name='search', placeholder='Nhập tỉnh thành để tìm kiếm')
-											input(type='submit', value='')
-											i.fa.fa-search
-										.result_ite_box.result_q
-											ul
-												li
-													a(href='#') Quận 1
-												li
-													a(href='#') Quận 2
-												li
-													a(href='#') Quận Gò Vấp
-												li
-													a(href='#') Quận Phú Nhuận
-					.box-hoa-don
-						a(href='#')
-							i.fas.fa-check-square
-							| Xuất hóa đơn công ty
-						.form-input
-							input(type='text', name='masothue', placeholder='Mã số thuế')
-							input(type='text', name='tencongty', placeholder='Tên công ty')
-						.form-input
-							input(type='text', name='diachicongty', placeholder='Địa chỉ công ty')
-							input(type='text', name='email', placeholder='Email')
-					.box-hinh-thuc-thanh-toan
-						span.label Hình thức thanh toán
-						.box-ite
-							a.orange(href='#')
-								span Thanh toán khi nhận hàng
-								span COD
-							a.green(href='#')
-								span THANH TOÁN ONLINE QUA VNPAY
-								span Bằng thẻ ATM, Visa, Mastercard, JCB
+						._l
+							i.icon-location
+							.text
+								h5 thêm địa chỉ mới
+								p.name Bách, 0904678573
+								p.address Đường số 1, khu chế xuất Linh Trung 2, Phường Bình Chiểu, Quân Thủ Đức, Hồ Chí Minh
+						._r
+							a(href='javascript:void(0)') Thay đổi
+							i.icon-arrow-next
+					.box-thong-tin-xuat-hoa-don
+						a(href='javascript:void(0)')
+							i
+							span thông tin xuất hóa đơn
+					.box-ghi-chu-don-hang
+						a(href='javascript:void(0)')
+							i
+							span ghi chú đơn hàng
+					.cart_options
+						.tam-tinh
+							.item
+								span Tiền hàng:
+								span 80.000.000đ
+							.item
+								span Phí giao hàng: 
+								span Miễn phí
+							.item
+								span Giảm giá: 
+								span 0đ
+						.tong-cong
+							.item
+								span Tổng cộng:
+								span 7.756.000đ
+							.col_2
+								a(href="#") 
+									| Thanh toán
+									img(src="img/giohang/thanh-toan.png",alt="")
+								a(href="thanhtoan.html") Tiến hành đặt hàng
 		.form-box-search(style='display: none')
 			.search__input
 				form#form_s
