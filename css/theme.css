@@ -3531,9 +3531,9 @@ img {
 }
 .popup-giaohang .detail .pr .item p.name span {
   background-color: #0f890e;
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
-  padding: 5px;
+  padding: 3px 4px;
   border-radius: 5px;
   margin: 0 0 0 10px;
 }
