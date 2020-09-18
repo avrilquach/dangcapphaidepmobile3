@@ -214,4 +214,17 @@ $(document).ready(function() {
 		$(".popup-giaohang").addClass("active");
 		$(".popup-diachi").removeClass("active");
 	})
+	$(".box-thong-tin-xuat-hoa-don a").click(function(e){
+		$(".popup-thong-tin-hoa-don").addClass("active");
+	})
+	$(".popup-thong-tin-hoa-don .close").click(function(e){
+		$(".popup-thong-tin-hoa-don").removeClass("active");
+	})
+	$(".box-ghi-chu-don-hang a").click(function(e){
+		$(".popup-ghi-chu-don-hang").addClass("active");
+	})
+	$(".popup-ghi-chu-don-hang .close").click(function(e){
+		$(".popup-ghi-chu-don-hang").removeClass("active");
+	})
+	
 });

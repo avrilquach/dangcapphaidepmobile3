@@ -1772,7 +1772,6 @@ img
 
             &.promotions
               color: #0f890e
-
         .detail
           span
             display: block
@@ -3763,7 +3762,185 @@ img
         left: 15px
         top: -2px
         font-size: 30px
-        color: #686868   
+        color: #686868 
+.popup-thong-tin-hoa-don
+  &.active
+    &::before
+      bottom: 0
+    .all
+      bottom: 0
+  &::before
+    content: ""
+    background: rgba(0,0,0,0.15)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 8
+    -webkit-transition: 0.1s ease-out
+    -o-transition: 0.1s ease-out
+    transition: 0.1s ease-out
+    bottom: -100%
+  .all
+    position: fixed
+    background-color: #fff
+    z-index: 9
+    left: 0
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    width: 100%
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -100%
+  h5
+    text-align: center
+    font-family: "Roboto"
+    font-weight: 500
+    margin: 10px 0 0 0
+  .close
+    position: absolute
+    right: 15px
+    top: 18px
+    font-size: 1rem
+  .detail
+    padding: 15px
+    border-top: 1px solid #e1e1e1
+    margin: 15px 0 0 0
+    .pr
+      .control
+        margin: 0 0 20px 0
+        label
+          display: block
+          color: #4b4b4b
+          font-size: 16px
+        input.text
+          width: 100%
+          color: #4b4b4b
+          font-size: 14px
+          font-weight: 300
+          height: 30px
+          border: none
+          border-bottom: 1px solid #a3a3a3
+          &::placeholder
+            font-family: "Roboto", sans-serif
+            font-weight: 300
+        &:last-child
+          margin: 0
+        input.submit
+          background-color: #d0ced1
+          border-radius: 10px
+          height: 45px
+          text-align: center
+          font-size: 16px
+          width: 100%
+          border: none
+          color: #fff
+    a:last-child
+      display: flex
+      justify-content: center
+      height: 45px
+      color: #686868
+      position: relative
+      line-height: 45px
+      border: 1px dashed #686868
+      margin: 0 15px 15px 15px
+      border-radius: 5px
+      font-weight: 300
+      .icon
+        position: absolute
+        left: 15px
+        top: -2px
+        font-size: 30px
+        color: #686868  
+.popup-ghi-chu-don-hang
+  &.active
+    &::before
+      bottom: 0
+    .all
+      bottom: 0
+  &::before
+    content: ""
+    background: rgba(0,0,0,0.15)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 8
+    -webkit-transition: 0.1s ease-out
+    -o-transition: 0.1s ease-out
+    transition: 0.1s ease-out
+    bottom: -100%
+  .all
+    position: fixed
+    background-color: #fff
+    z-index: 9
+    left: 0
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    width: 100%
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -100%
+  h5
+    text-align: center
+    font-family: "Roboto"
+    font-weight: 500
+    margin: 10px 0 0 0
+  .close
+    position: absolute
+    right: 15px
+    top: 18px
+    font-size: 1rem
+  .detail
+    padding: 15px
+    border-top: 1px solid #e1e1e1
+    margin: 15px 0 0 0
+    .pr
+      .control
+        margin: 0 0 20px 0
+        label
+          display: block
+          color: #4b4b4b
+          font-size: 16px
+        input.text
+          width: 100%
+          color: #4b4b4b
+          font-size: 14px
+          font-weight: 300
+          height: 30px
+          border: none
+          border-bottom: 1px solid #a3a3a3
+          &::placeholder
+            font-family: "Roboto", sans-serif
+            font-weight: 300
+        &:last-child
+          margin: 0
+        input.submit
+          background-color: #d0ced1
+          border-radius: 10px
+          height: 45px
+          text-align: center
+          font-size: 16px
+          width: 100%
+          border: none
+          color: #fff
+    a:last-child
+      display: flex
+      justify-content: center
+      height: 45px
+      color: #686868
+      position: relative
+      line-height: 45px
+      border: 1px dashed #686868
+      margin: 0 15px 15px 15px
+      border-radius: 5px
+      font-weight: 300
+      .icon
+        position: absolute
+        left: 15px
+        top: -2px
+        font-size: 30px
+        color: #686868    
 .loc-sp
   background-color: #fff
   position: fixed

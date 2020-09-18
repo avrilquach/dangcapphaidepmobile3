@@ -3679,6 +3679,202 @@ img {
   color: #686868;
 }
 
+.popup-thong-tin-hoa-don.active::before {
+  bottom: 0;
+}
+.popup-thong-tin-hoa-don.active .all {
+  bottom: 0;
+}
+.popup-thong-tin-hoa-don::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  transition: 0.1s ease-out;
+  bottom: -100%;
+}
+.popup-thong-tin-hoa-don .all {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9;
+  left: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  transition: 1s ease-out;
+  bottom: -100%;
+}
+.popup-thong-tin-hoa-don h5 {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+.popup-thong-tin-hoa-don .close {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  font-size: 1rem;
+}
+.popup-thong-tin-hoa-don .detail {
+  padding: 15px;
+  border-top: 1px solid #e1e1e1;
+  margin: 15px 0 0 0;
+}
+.popup-thong-tin-hoa-don .detail .pr .control {
+  margin: 0 0 20px 0;
+}
+.popup-thong-tin-hoa-don .detail .pr .control label {
+  display: block;
+  color: #4b4b4b;
+  font-size: 16px;
+}
+.popup-thong-tin-hoa-don .detail .pr .control input.text {
+  width: 100%;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 300;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #a3a3a3;
+}
+.popup-thong-tin-hoa-don .detail .pr .control input.text::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.popup-thong-tin-hoa-don .detail .pr .control:last-child {
+  margin: 0;
+}
+.popup-thong-tin-hoa-don .detail .pr .control input.submit {
+  background-color: #d0ced1;
+  border-radius: 10px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  color: #fff;
+}
+.popup-thong-tin-hoa-don .detail a:last-child {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  color: #686868;
+  position: relative;
+  line-height: 45px;
+  border: 1px dashed #686868;
+  margin: 0 15px 15px 15px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+.popup-thong-tin-hoa-don .detail a:last-child .icon {
+  position: absolute;
+  left: 15px;
+  top: -2px;
+  font-size: 30px;
+  color: #686868;
+}
+
+.popup-ghi-chu-don-hang.active::before {
+  bottom: 0;
+}
+.popup-ghi-chu-don-hang.active .all {
+  bottom: 0;
+}
+.popup-ghi-chu-don-hang::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  transition: 0.1s ease-out;
+  bottom: -100%;
+}
+.popup-ghi-chu-don-hang .all {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9;
+  left: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  transition: 1s ease-out;
+  bottom: -100%;
+}
+.popup-ghi-chu-don-hang h5 {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+.popup-ghi-chu-don-hang .close {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  font-size: 1rem;
+}
+.popup-ghi-chu-don-hang .detail {
+  padding: 15px;
+  border-top: 1px solid #e1e1e1;
+  margin: 15px 0 0 0;
+}
+.popup-ghi-chu-don-hang .detail .pr .control {
+  margin: 0 0 20px 0;
+}
+.popup-ghi-chu-don-hang .detail .pr .control label {
+  display: block;
+  color: #4b4b4b;
+  font-size: 16px;
+}
+.popup-ghi-chu-don-hang .detail .pr .control input.text {
+  width: 100%;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 300;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #a3a3a3;
+}
+.popup-ghi-chu-don-hang .detail .pr .control input.text::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.popup-ghi-chu-don-hang .detail .pr .control:last-child {
+  margin: 0;
+}
+.popup-ghi-chu-don-hang .detail .pr .control input.submit {
+  background-color: #d0ced1;
+  border-radius: 10px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  color: #fff;
+}
+.popup-ghi-chu-don-hang .detail a:last-child {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  color: #686868;
+  position: relative;
+  line-height: 45px;
+  border: 1px dashed #686868;
+  margin: 0 15px 15px 15px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+.popup-ghi-chu-don-hang .detail a:last-child .icon {
+  position: absolute;
+  left: 15px;
+  top: -2px;
+  font-size: 30px;
+  color: #686868;
+}
+
 .loc-sp {
   background-color: #fff;
   position: fixed;
