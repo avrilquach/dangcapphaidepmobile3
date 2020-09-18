@@ -3876,6 +3876,105 @@ img {
   color: #686868;
 }
 
+.popup-tinh-thanh-pho.active::before, .popup-quan-huyen.active::before, .popup-phuong-xa.active::before {
+  bottom: 0;
+}
+.popup-tinh-thanh-pho.active .all, .popup-quan-huyen.active .all, .popup-phuong-xa.active .all {
+  bottom: 0;
+}
+.popup-tinh-thanh-pho::before, .popup-quan-huyen::before, .popup-phuong-xa::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  transition: 0.1s ease-out;
+  bottom: -100%;
+}
+.popup-tinh-thanh-pho .all, .popup-quan-huyen .all, .popup-phuong-xa .all {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9;
+  left: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  transition: 1s ease-out;
+  bottom: -100%;
+}
+.popup-tinh-thanh-pho h5, .popup-quan-huyen h5, .popup-phuong-xa h5 {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+.popup-tinh-thanh-pho .icon-arrow-pre, .popup-quan-huyen .icon-arrow-pre, .popup-phuong-xa .icon-arrow-pre {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  font-size: 1rem;
+}
+.popup-tinh-thanh-pho .close, .popup-quan-huyen .close, .popup-phuong-xa .close {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  font-size: 1rem;
+}
+.popup-tinh-thanh-pho .detail, .popup-quan-huyen .detail, .popup-phuong-xa .detail {
+  padding: 15px;
+  border-top: 1px solid #e1e1e1;
+  margin: 15px 0 0 0;
+}
+.popup-tinh-thanh-pho .detail .pr .control, .popup-quan-huyen .detail .pr .control, .popup-phuong-xa .detail .pr .control {
+  margin: 0 0 20px 0;
+}
+.popup-tinh-thanh-pho .detail .pr .control label, .popup-quan-huyen .detail .pr .control label, .popup-phuong-xa .detail .pr .control label {
+  display: block;
+  color: #4b4b4b;
+  font-size: 16px;
+}
+.popup-tinh-thanh-pho .detail .pr .control input.text, .popup-quan-huyen .detail .pr .control input.text, .popup-phuong-xa .detail .pr .control input.text {
+  width: 100%;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 300;
+  height: 35px;
+  border: none;
+  background-color: #f5f6f6;
+  border-radius: 5px;
+  color: #a2a2a2;
+  padding: 0 10px;
+}
+.popup-tinh-thanh-pho .detail .pr .control input.text::placeholder, .popup-quan-huyen .detail .pr .control input.text::placeholder, .popup-phuong-xa .detail .pr .control input.text::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.popup-tinh-thanh-pho .detail .pr .control:last-child, .popup-quan-huyen .detail .pr .control:last-child, .popup-phuong-xa .detail .pr .control:last-child {
+  margin: 0;
+}
+.popup-tinh-thanh-pho .detail .pr .control input.submit, .popup-quan-huyen .detail .pr .control input.submit, .popup-phuong-xa .detail .pr .control input.submit {
+  background-color: #d0ced1;
+  border-radius: 10px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  color: #fff;
+}
+.popup-tinh-thanh-pho .detail .result .item, .popup-quan-huyen .detail .result .item, .popup-phuong-xa .detail .result .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.popup-tinh-thanh-pho .detail .result .item i, .popup-tinh-thanh-pho .detail .result .item p, .popup-quan-huyen .detail .result .item i, .popup-quan-huyen .detail .result .item p, .popup-phuong-xa .detail .result .item i, .popup-phuong-xa .detail .result .item p {
+  font-weight: 300;
+  color: #4b4b4b;
+  font-size: 15px;
+}
+
 .loc-sp {
   background-color: #fff;
   position: fixed;

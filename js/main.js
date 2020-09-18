@@ -196,6 +196,7 @@ $(document).ready(function() {
 	$(".box-dia-chi ._r a").click(function(e){
 		$(".popup-giaohang").addClass("active");
 	})
+	// giaohang
 	$(".popup-giaohang .close").click(function(e){
 		$(".popup-giaohang").removeClass("active");
 	})
@@ -206,6 +207,7 @@ $(document).ready(function() {
 		$(".popup-giaohang").removeClass("active");
 		$(".popup-diachi").addClass("active");
 	})
+	// diachi
 	$(".popup-diachi .close").click(function(e){
 		$(".popup-giaohang").addClass("active");
 		$(".popup-diachi").removeClass("active");
@@ -214,17 +216,57 @@ $(document).ready(function() {
 		$(".popup-giaohang").addClass("active");
 		$(".popup-diachi").removeClass("active");
 	})
+	// thongtinxuathoadon
 	$(".box-thong-tin-xuat-hoa-don a").click(function(e){
 		$(".popup-thong-tin-hoa-don").addClass("active");
 	})
 	$(".popup-thong-tin-hoa-don .close").click(function(e){
 		$(".popup-thong-tin-hoa-don").removeClass("active");
 	})
+	// ghichudonhang
 	$(".box-ghi-chu-don-hang a").click(function(e){
 		$(".popup-ghi-chu-don-hang").addClass("active");
 	})
 	$(".popup-ghi-chu-don-hang .close").click(function(e){
 		$(".popup-ghi-chu-don-hang").removeClass("active");
 	})
-	
+	// chontinhthanhpho
+	$(".choose_tinh_thanhpho").click(function(e){
+		$(".popup-tinh-thanh-pho").addClass("active");
+		$(".popup-diachi").removeClass("active");
+	})
+	$(".popup-tinh-thanh-pho .close").click(function(e){
+		$(".popup-tinh-thanh-pho").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
+	$(".popup-tinh-thanh-pho .back").click(function(e){
+		$(".popup-tinh-thanh-pho").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
+	// chonquanhuyen
+	$(".choose_quan_huyen").click(function(e){
+		$(".popup-quan-huyen").addClass("active");
+		$(".popup-diachi").removeClass("active");
+	})
+	$(".popup-quan-huyen .close").click(function(e){
+		$(".popup-quan-huyen").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
+	$(".popup-quan-huyen .back").click(function(e){
+		$(".popup-quan-huyen").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
+	// chonphuongxa
+	$(".choose_phuong_xa").click(function(e){
+		$(".popup-phuong-xa").addClass("active");
+		$(".popup-diachi").removeClass("active");
+	})
+	$(".popup-phuong-xa .close").click(function(e){
+		$(".popup-phuong-xa").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
+	$(".popup-phuong-xa .back").click(function(e){
+		$(".popup-phuong-xa").removeClass("active");
+		$(".popup-diachi").addClass("active");
+	})
 });
