@@ -1761,6 +1761,7 @@ img {
 #wrapper_mobile .cart .list-cart .cart_item .item .detail span.price .price_old {
   font-size: 13px;
   color: #919697;
+  text-decoration: line-through;
 }
 #wrapper_mobile .cart .list-cart .cart_item .item .detail span.number {
   display: flex;
