@@ -232,7 +232,7 @@ $(document).ready(function() {
 	})
 	// chontinhthanhpho
 	$(".choose_tinh_thanhpho").click(function(e){
-		$(".popup-tinh-thanh-pho").addClass("active");
+		//$(".popup-tinh-thanh-pho").addClass("active");
 		$(".popup-diachi").removeClass("active");
 	})
 	$(".popup-tinh-thanh-pho .close").click(function(e){
