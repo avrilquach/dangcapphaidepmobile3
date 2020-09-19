@@ -3611,7 +3611,7 @@ img {
   bottom: -1000px;
 }
 .popup-diachi .all {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   z-index: 9;
   left: 0;
@@ -3912,7 +3912,7 @@ img {
   bottom: -1000px;
 }
 .popup-tinh-thanh-pho .all, .popup-quan-huyen .all, .popup-phuong-xa .all {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   z-index: 11;
   left: 0;
