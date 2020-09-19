@@ -3619,7 +3619,7 @@ img {
   border-top-right-radius: 20px;
   width: 100%;
   transition: 1s ease-out;
-  bottom: -100%;
+  bottom: -1000px;
 }
 .popup-diachi h5 {
   text-align: center;
@@ -3920,7 +3920,7 @@ img {
   border-top-right-radius: 20px;
   width: 100%;
   transition: 1s ease-out;
-  bottom: -100%;
+  bottom: -1000px;
 }
 .popup-tinh-thanh-pho h5, .popup-quan-huyen h5, .popup-phuong-xa h5 {
   text-align: center;
