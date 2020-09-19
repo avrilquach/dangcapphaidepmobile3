@@ -181,6 +181,25 @@ img {
 #wrapper_mobile #header {
   background-color: #0F890E;
 }
+#wrapper_mobile #header.header-ctdh {
+  background-color: #fff;
+  box-shadow: 1px 0 14px rgba(0, 0, 0, 0.1);
+}
+#wrapper_mobile #header.header-ctdh span {
+  font-size: 18px;
+}
+#wrapper_mobile #header.header-ctdh .menu-back {
+  font-size: 20px;
+  color: #000;
+}
+#wrapper_mobile #header.header-ctdh .menu-right span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #747474;
+  display: block;
+  margin: 0 0 2px 0;
+}
 #wrapper_mobile #header.header-payment-new {
   background-color: #fff;
   border-bottom: 1px solid #efefef;
@@ -3973,6 +3992,102 @@ img {
   font-weight: 300;
   color: #4b4b4b;
   font-size: 15px;
+}
+
+.ctdh {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  align-items: center;
+  padding: 0 15px;
+}
+.ctdh .style1 {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background-color: #fff;
+}
+.ctdh .style1 .box1 {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+.ctdh .style1 .box1 i {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #636363;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 10px;
+  justify-content: center;
+}
+.ctdh .style1 .box1 p.class1, .ctdh .style1 .box1 p.class2 {
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 5px 0;
+}
+.ctdh .style1 .box1 p.class3 {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+.ctdh .style1 .box2 {
+  text-align: center;
+  padding: 15px;
+}
+.ctdh .style1 .box2 p.class1 {
+  color: #848484;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+.ctdh .style1 .box2 p.class2 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #000;
+}
+.ctdh .style1 .box2 p.class3 {
+  font-weight: 300;
+  color: #606060;
+  font-size: 14px;
+}
+.ctdh .style2 {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0 0 0;
+}
+.ctdh .style2 .box3 {
+  text-align: center;
+}
+.ctdh .style2 .box3 p {
+  color: #0f8a0e;
+  font-size: 18px;
+}
+.ctdh .style2 .box4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+}
+.ctdh .style2 .box4 a:nth-child(1) {
+  background-color: #fe2c6d;
+  height: 45px;
+  width: calc(60% - 7.5px);
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+.ctdh .style2 .box4 a:nth-child(2) {
+  height: 45px;
+  background-color: #d7d7d7;
+  width: calc(40% - 7.5px);
+  color: #575757;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
 }
 
 .loc-sp {
