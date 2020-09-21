@@ -1,22 +1,26 @@
-.popup-dang-ky
+.popup-dang-ky.active
 	.all
 		span.close
 			i.icon-close
+		h5 Chào mừng bạn đến với
+		img.top(src="img/logo.jpg", alt="")
 		.detail
 			.pr
 				form
 					.control
-            i.icon-call
-            p Sử dụng số: 
-              span 0906154687
-						input.text(type='text' placeholder="")
-            .submit
-              input(type="submit")
-              i.icon-edit
-				span Hoặc
-        .button
-          a(href="#").google
-
-            span Tiếp tục với Google
-          a(href="#").facebook
-            span Tiếp tục với Facebook
+						i.icon-call.top
+						input.text(type='text' placeholder="Sử dụng số: 0906154687")
+						.submit
+							input(type="submit" value="")
+							i.icon-edit
+				span.top Hoặc
+				.button
+					a(href="#").google
+						.img
+							img(src="img/giohang/icon-google.png", alt="")
+						span Tiếp tục với Google
+					a(href="#").facebook
+						.img
+							img(src="img/giohang/icon-facebook.png", alt="")
+						span Tiếp tục với Facebook
+						

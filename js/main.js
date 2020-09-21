@@ -269,4 +269,8 @@ $(document).ready(function() {
 		$(".popup-phuong-xa").removeClass("active");
 		$(".popup-diachi").addClass("active");
 	})
+	// popup dang ky
+	$(".popup-dang-ky .close").click(function(e){
+		$(".popup-dang-ky").removeClass("active");
+	})
 });

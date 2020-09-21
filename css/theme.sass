@@ -4049,6 +4049,129 @@ img
           font-weight: 300
           color: #4b4b4b
           font-size: 15px
+.popup-dang-ky
+  &.active
+    &::before
+      bottom: 0
+    .all
+      bottom: 0
+  &::before
+    content: ""
+    background: rgba(0,0,0,0.15)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 10
+    -webkit-transition: 0.1s ease-out
+    -o-transition: 0.1s ease-out
+    transition: 0.1s ease-out
+    bottom: -1000px
+  .all
+    position: fixed
+    background-color: #fff
+    z-index: 11
+    left: 0
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    width: 100%
+    -webkit-transition: 1s ease-out
+    -o-transition: 1s ease-out
+    transition: 1s ease-out
+    bottom: -1000px
+  h5
+    text-align: center
+    color: #202020
+    font-size: 20px
+    clear: both
+    margin: 0 0 5px 0
+  img.top
+    margin: 0 auto
+    text-align: center
+    display: block
+  .icon-arrow-pre
+    position: absolute
+    left: 15px
+    top: 18px
+    font-size: 1rem
+  .close
+    padding: 15px 20px 0 15px 
+    font-size: 1rem
+    display: block
+  .detail
+    padding: 15px
+    .pr
+      span.top
+        text-align: center
+        opacity: 0.5
+        color: #000000
+        font-size: 15px
+        display: block
+        margin: 0 0 10px 0
+      .button
+        display: flex
+        justify-content: space-between
+        a
+          width: calc(50% - 7.5px)
+          height: 40px
+          border-radius: 5px
+          display: flex
+          align-items: center
+          font-size: 12px
+          color: #fff
+          .img
+            width: 36px
+            line-height: 40px 
+            text-align: center
+          span
+            text-align: center
+            width: calc(100% - 36px)
+          &.google
+            background-color: #de4b39
+            .img
+              border-right: 1px solid #e67466
+          &.facebook
+            background-color: #3b5999
+            .img
+              border-right: 1px solid #5a73a9
+      .control
+        position: relative
+        margin:  0 0 10px 0
+        input.text
+          width: 100%
+          height: 40px
+          border: 1px solid #0d6803
+          border-radius: 5px
+          padding: 0 80px 0 50px
+          color: #0d6803
+          font-weight: 300
+          font-size: 15px
+          &::placeholder
+            color: #0d6803
+            font-weight: 300
+            font-size: 15px
+        i.top
+          position: absolute
+          top: 9px
+          left: 20px
+          font-size: 20px
+          color: #0d6803
+        .submit
+          position: absolute
+          right: 0
+          top: 0
+          input
+            background-color: #0d6803
+            width: 70px
+            height: 40px
+            border-top-right-radius: 5px
+            border-bottom-right-radius: 5px
+            border: none
+          i
+            position: absolute
+            right: 22px
+            top: 10px
+            font-size: 20px
+            color: #fff
 .ctdh
   display: flex
   justify-content: center
@@ -4130,6 +4253,7 @@ img
         border-radius: 5px
         text-align: center
         line-height: 45px
+
 .loc-sp
   background-color: #fff
   position: fixed
