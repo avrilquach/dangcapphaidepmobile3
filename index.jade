@@ -5,16 +5,38 @@ html
     #wrapper_mobile
       include inc/header.jade
       // Banner
-      section.banner(style='background-image: linear-gradient(#dbc2c6, #fff);')
+      section.banner
         .owl-carousel.owl-theme.main-banner
-          a.item(href='#')
-            .color_bg(style='display: none') #dbc2c6
-            img.lazy(data-src='img/banner.jpg')
-          a.item(href='#')
-            .color_bg(style='display: none') #1c71c7
-            img.lazy(data-src='img/banner2.jpg')
+          -for(i=0;i<3;i++)
+            .item
+              img(src='img/banner.jpg')
+              .caption
+                h1 Tinh chất làm sáng da
+                  span BELMEUR  serum
+                p.row.align-items-center.justify-content-center
+                  span chỉ còn
+                  span 345k
+                a(href="#") mua ngay
+      // Brands
+      .brands.swiper-container
+        ul.swiper-wrapper
+          li.swiper-slide
+            a(href="#")
+              img(src='img/image.png', alt='')
+          li.swiper-slide
+            a(href="#")
+              img(src='img/image.png', alt='')
+          li.swiper-slide
+            a(href="#")
+              img(src='img/image.png', alt='')
+          li.swiper-slide
+            a(href="#")
+              img(src='img/image.png', alt='')
+          li.swiper-slide
+            a(href="#")
+              img(src='img/image.png', alt='')
       // Menu
-      .menu-home-top.swiper-container.pad30_0
+      //.menu-home-top.swiper-container.pad30_0
         ul.swiper-wrapper
           li.swiper-slide
             a(href='#')
@@ -37,7 +59,7 @@ html
               img(src='img/m5.png', alt='')
               span Giảm cân
       // Partner
-      .partner.swiper-container.pad30_0
+      //.partner.swiper-container.pad30_0
         ul.swiper-wrapper
           li.swiper-slide
             a(href='#')
@@ -55,7 +77,7 @@ html
             a(href='#')
               img(src='img/partner1.jpg', alt='')
       // Products
-      section.products.heading.pad30_0
+      //section.products.heading.pad30_0
         .container
           h1 Sản phẩm khuyến mãi
           .main-products.swiper-container.padtp30_0
@@ -220,7 +242,7 @@ html
                     i.fa.fa-star.green
                     i.fa.fa-star.green
                     i.fa.fa-star
-      section.products.heading.pad30_0
+      //section.products.heading.pad30_0
         .container
           h2 Chăm sóc da an toàn
           .swiper-container
@@ -408,7 +430,7 @@ html
             #cate1_tab2.tab-pane.fade
             #cate1_tab3.tab-pane.fade
             #cate1_tab4.tab-pane.fade
-      section.products.heading.pad30_0
+      //section.products.heading.pad30_0
         .container
           h2 Sản phẩm Collagen
           .swiper-container
@@ -594,7 +616,7 @@ html
             #cate2_tab2.tab-pane.fade
             #cate2_tab3.tab-pane.fade
       // News
-      section.news.heading.pad30_0
+      //section.news.heading.pad30_0
         .container
           h2 Kinh nghiệm làm đẹp
           .padtp30_0
@@ -618,7 +640,7 @@ html
               p Lorem Ipsum is simply dummy text of the printing...	
             a.read-more(href='#') Xem tất cả
       // Show room
-      section.news.heading.pad30_0
+      //section.news.heading.pad30_0
         .container
           h2 Show room
           .swiper-container.padtp30_0
@@ -633,7 +655,7 @@ html
                 a(href='#')
                   img.lazy(data-src='img/showroom.jpg')
       // Footer
-      footer#footer-new
+      //footer#footer-new
         .footer-top.pad30_0
           .container
             .item
@@ -664,8 +686,8 @@ html
               | Tòa Nhà AC, 79 Duy Tân Cầu Giấy
             a(href='#')
               img.padtp30_0(src='img/bocongthuong.png', alt='')
-      include inc/bottom.jade
-    .menu-mobile
+      //include inc/bottom.jade
+    //.menu-mobile
       span.close_mobile
         i.fa.fa-times
       ul
@@ -692,7 +714,7 @@ html
           a(href='#') Trang điểm
         li
           a(href='#') Kinh nghiệm làm đẹp
-    .form-box-search(style='display: none')
+    //.form-box-search(style='display: none')
       .search__input
         form#form_s
           i.fa.fa-search

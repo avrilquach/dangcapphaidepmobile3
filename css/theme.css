@@ -1,12 +1,6 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.eot") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
-  font-family: "Roboto", Arial, san-serif;
+  font-family: "Nunito", Arial, sans-serif;
   font-size: 14px;
 }
 body.active {
@@ -171,7 +165,7 @@ img {
 
 #wrapper_mobile {
   width: 100%;
-  max-width: 640px;
+  max-width: 418px;
   margin: 0 auto;
   background-color: #ebebeb;
 }
@@ -179,7 +173,9 @@ img {
   background-color: #fff;
 }
 #wrapper_mobile #header {
-  background-color: #0F890E;
+  padding: 17px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
 }
 #wrapper_mobile #header.header-ctdh {
   background-color: #fff;
@@ -267,28 +263,17 @@ img {
   color: #fff;
 }
 #wrapper_mobile #header .logo-mobile {
-  padding: 0 10px;
-  display: block;
-  text-align: center;
+  padding: 0 20px;
 }
 #wrapper_mobile #header .menu-click {
   width: 35px;
   display: block;
 }
-#wrapper_mobile #header .search {
-  width: 30px;
-  padding: 0 3px;
-  margin: 0 auto;
-}
-#wrapper_mobile #header .search img {
-  width: 30px;
-}
 #wrapper_mobile #header .search form {
   display: none;
 }
 #wrapper_mobile #header .cart {
-  width: 30px;
-  padding: 0 5px;
+  padding: 0 20px;
   position: relative;
   float: right;
 }
@@ -310,31 +295,48 @@ img {
 }
 #wrapper_mobile .banner .main-banner .item .caption {
   position: absolute;
-  left: 15px;
-  top: 30px;
+  left: 30px;
+  top: 25%;
   z-index: 20;
-  width: 300px;
+  width: 150px;
+  text-align: center;
 }
-#wrapper_mobile .banner .main-banner .item h2 {
-  font-size: 21px;
-  color: #78A206;
-  margin: 0 0 5px 0;
+#wrapper_mobile .banner .main-banner .item h1 {
+  font-size: 11px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#wrapper_mobile .banner .main-banner .item h1 span {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
 }
 #wrapper_mobile .banner .main-banner .item p {
   font-size: 30px;
   text-transform: uppercase;
-  color: #E49B00;
-  margin: 0 0 10px 0;
-}
-#wrapper_mobile .banner .main-banner .item span {
-  width: 74px;
-  height: 23px;
-  background: #78A206;
-  border-radius: 30px;
-  display: block;
-  font-size: 12px;
   color: #fff;
-  text-align: center;
+  border-radius: 30px;
+  width: 100%;
+  background: #FF9E9B;
+}
+#wrapper_mobile .banner .main-banner .item p span:nth-child(1) {
+  font-size: 13px;
+  font-weight: 300;
+  margin-right: 5px;
+}
+#wrapper_mobile .banner .main-banner .item p span:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+#wrapper_mobile .banner .main-banner .item a {
+  background: url("../img/arrowright.svg") no-repeat right center;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+  text-decoration: underline;
 }
 #wrapper_mobile .banner .main-banner .owl-stage-outer {
   background: #fff;
@@ -342,29 +344,22 @@ img {
 }
 #wrapper_mobile .owl-dots {
   position: absolute;
-  bottom: 10px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
+  right: 15px;
+  bottom: 15px;
 }
 #wrapper_mobile .owl-dots .owl-dot {
-  margin: 0 5px 0 0;
+  margin: 0 0 5px 0;
 }
 #wrapper_mobile .owl-dots .owl-dot:last-child {
   margin: 0;
 }
 #wrapper_mobile .owl-dots .owl-dot.active span {
-  background-color: #0f890e;
+  background-color: #FF326C;
 }
 #wrapper_mobile .owl-dots .owl-dot span {
-  height: 10px;
-  width: 10px;
-  background-color: #3a4144;
+  height: 5px;
+  width: 5px;
+  background-color: #C4C4C4;
   display: block;
   border-radius: 50%;
 }
@@ -5316,4 +5311,27 @@ img {
 }
 .menu_thuonghieu .search_alphabet ._midlle ._item ul li a {
   color: #fff;
+}
+
+.brands ul li {
+  width: 114px;
+  height: 88px;
+  border-right: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.brands ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.brands ul li:first-child {
+  border-left: 1px solid #dbdbdb;
+}
+.brands ul li:hover {
+  background: #FBF3F3;
+}
+.brands ul li:hover a img {
+  mix-blend-mode: luminosity;
 }
