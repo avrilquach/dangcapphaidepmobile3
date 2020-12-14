@@ -1,7 +1,7 @@
 body
   font-family: "Nunito", Arial, sans-serif
   font-size: 14px
-
+  background: #F5F5F5
   &.active
     overflow: hidden
 
@@ -81,32 +81,15 @@ img
 
 .heading
   h1, h2
-    font-size: 25px
-    position: relative
-    display: -webkit-box
-    display: -ms-flexbox
+    font-size: 20px
+    font-weight: 300
+    color: #000
+    text-transform: uppercase
+  .head
     display: flex
-    display: -webkit-flex
-    -webkit-box-align: center
-    -ms-flex-align: center
     align-items: center
-
-  h1::before, h2::before
-    content: ""
-    width: 100px
-    height: 3px
-    background: #d0d2d2
-    position: absolute
-    bottom: -10px
-
-  h1::after, h2::after
-    content: "\f054"
-    font-weight: 900
-    font-family: "Font Awesome 5 Free"
-    position: absolute
-    right: 0
-    color: #929292
-    font-size: 14px
+    justify-content: space-between
+    margin-bottom: 5px
 .heading-bachhoa
   h2
     font-weight: 500
@@ -311,16 +294,25 @@ img
 
   .menu-home-top
     background: #fff
-
+    margin-bottom: 10px
     ul li
-      width: 90px
+      width: 95px
       text-align: center
       padding: 0 15px
-
+      .img
+        background: #F5F6F6
+        border-radius: 10px
+        width: 68px
+        height: 63px
+        display: flex
+        align-items: center
+        justify-content: center
       a span
         display: block
         margin: 5px 0 0 0
-        color: #696969
+        color: #000
+        font-size: 12px
+        font-weight: 300
 
   .partner
     margin: 10px 0 0 0
@@ -406,13 +398,68 @@ img
       border-radius: 20px
 
   .products
-    background: #fff
-    margin: 10px 0 0 0
-
+    margin-bottom: 10px
+    .banner-product
+      margin-bottom: 10px
+      img
+        width: 100%
+        border-radius: 5px
     ul li.swiper-slide
-      width: 175px
-      padding: 0 10px
+      width: 190px
+      margin: 0 10px 0 0
+      background: #fff
+      border-radius: 5px
+      .inner
+        padding: 10px
 
+        img.product
+          margin: 0 auto 5px auto
+          width: 165px
+          height: 160px
+          display: block
+
+        .title
+          font-size: 14px
+          font-weight: 300
+          color: #000000
+          margin-bottom: 5px
+          height: 46px
+          overflow: hidden
+          display: block
+
+        .star
+          margin-bottom: 5px
+
+          img
+            margin-right: 5px
+          span
+            color: #a2a2a2
+            font-size: 13px
+            font-weight: 300
+        .price
+          .new
+            font-size: 16px
+            font-weight: 300
+            color: #FF326C
+            margin-right: 20px
+
+          .old
+            font-size: 14px
+            font-weight: 300
+            color: #C3C3C3
+            -webkit-text-decoration-line: line-through
+            text-decoration-line: line-through
+
+      a
+        &.addtocart, &.write
+          background: #FFE0E9
+          border-radius: 0px 0px 5px 5px
+          width: 100%
+          height: 37px
+          font-size: 12px
+          font-weight: 400
+          text-transform: uppercase
+          color: #444444
     .nav-tabs
       border-bottom: none
       -ms-flex-wrap: unset
@@ -1426,6 +1473,58 @@ img
           width: 50%
           float: left
           padding: 7.5px
+          .item
+            margin: 0 7.5px 15px 7.5px
+            border-radius: 5px
+            background: #fff
+
+            .inner
+              padding: 10px
+
+              img.product
+                margin: 0 auto 5px auto
+                width: 230px
+                height: 212px
+                display: block
+
+              .title
+                font-size: 14px
+                font-weight: 300
+                color: #000000
+                margin-bottom: 5px
+                height: 46px
+                overflow: hidden
+                display: block
+
+              .star
+                margin-bottom: 5px
+
+                img
+                  margin-right: 5px
+
+              .price
+                .new
+                  font-size: 16px
+                  font-weight: 300
+                  color: #FF326C
+                  margin-right: 20px
+
+                .old
+                  font-size: 14px
+                  font-weight: 300
+                  color: #C3C3C3
+                  -webkit-text-decoration-line: line-through
+                  text-decoration-line: line-through
+
+            a
+              &.addtocart, &.write
+                background: #FFE0E9
+                border-radius: 0px 0px 5px 5px
+                width: 100%
+                height: 37px
+                font-size: 12px
+                font-weight: 400
+                text-transform: uppercase
 
       .read-more
         margin: 0 auto
@@ -5247,6 +5346,7 @@ img
             a
               color: #fff
 .brands
+  margin-bottom: 10px
   ul
     li
       width: 114px
@@ -5265,3 +5365,21 @@ img
         background: #FBF3F3
         a img
           mix-blend-mode: luminosity
+.main-keyword
+  ul
+    background: #fff 
+    padding: 10px
+  margin-bottom: 10px
+  ul
+    li
+      width: auto
+      margin-right: 10px
+      a
+        background: #F5F5F5
+        border: 0.5px solid #C0C0C0
+        border-radius: 5px
+        font-size: 14px
+        font-weight: 300
+        color: #000
+        padding: 5px 10px
+        display: block
