@@ -11,7 +11,8 @@ $(document).ready(function() {
 		items:2,
 		loop:true,
 		nav: true,
-		autoplay: true,
+		autoplay: false,
+		autoWidth:true,
 	});
 	 $('.menu-click').click(function(e)
 	 {

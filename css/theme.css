@@ -5626,7 +5626,7 @@ img {
   height: 30px;
   position: absolute;
   bottom: 45px;
-  right: 26%;
+  right: 15%;
   text-indent: -9999px;
 }
 .main-videos .owl-nav .owl-prev {
@@ -5635,12 +5635,11 @@ img {
   height: 30px;
   position: absolute;
   bottom: 45px;
-  left: 23%;
+  left: 15%;
   text-indent: -9999px;
 }
 .main-videos .owl-item {
   padding-bottom: 95px;
-  padding-right: 10px;
   position: relative;
 }
 .main-videos .owl-item::after {
@@ -5654,11 +5653,11 @@ img {
   content: "";
   position: absolute;
   bottom: 80px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
   height: 4px;
   background: #000;
   z-index: 12;
-  left: 10px;
+  left: 20px;
 }
 .main-videos .owl-item.center .img::after {
   background: url("../img/play.svg") no-repeat;
@@ -5671,6 +5670,10 @@ img {
   right: 0;
   top: 40%;
   z-index: 10;
+}
+.main-videos .item {
+  padding: 0 10px;
+  display: block;
 }
 .main-videos .item .img {
   position: relative;
@@ -5696,7 +5699,6 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-right: 10px;
   height: 65px;
   overflow: hidden;
   text-transform: uppercase;
@@ -5709,7 +5711,7 @@ img {
 }
 .main-information li {
   margin: 0 10px;
-  width: 70%;
+  width: 65%;
 }
 .main-information .item {
   border: 1px solid #353535;
