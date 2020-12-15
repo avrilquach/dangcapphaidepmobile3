@@ -96,7 +96,7 @@ $(document).ready(function() {
 		$(this).parent().find('ul').toggleClass('current');
 		$(this).parent().find('h4').toggleClass('current');
 	});
-	$('.search a').click(function(e){
+	$('.search').click(function(e){
 		$('.form-box-search').show();
 	});
 	$('.form-box-search a.cancelSearch').click(function(e){
