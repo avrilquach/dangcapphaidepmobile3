@@ -3326,35 +3326,80 @@ img {
 #wrapper_mobile .breadcrumbs ul li:last-child::after {
   display: none;
 }
-#wrapper_mobile #footer-new {
+#wrapper_mobile #footer-new .footer-copyright {
+  background: #444444;
+  padding: 10px 0;
+}
+#wrapper_mobile #footer-new .footer-copyright ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper_mobile #footer-new .footer-copyright ul li {
+  margin: 0 5px;
+}
+#wrapper_mobile #footer-new .footer-top {
   background: #535252;
 }
-#wrapper_mobile #footer-new .footer-top .item {
+#wrapper_mobile #footer-new .footer-top ._item2 {
+  padding-top: 30px;
+  border-top: 1px solid #6e6e6e;
+}
+#wrapper_mobile #footer-new .footer-top ._item2 ul {
+  display: inline-block;
+}
+#wrapper_mobile #footer-new .footer-top ._item2 ul li {
+  float: left;
   display: flex;
-  display: -webkit-flex;
   align-items: center;
-  border-bottom: 1px solid #ebebeb;
-  padding: 15px 0;
+  height: 40px;
 }
-#wrapper_mobile #footer-new .footer-top .item h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 10px 0 0;
+#wrapper_mobile #footer-new .footer-top ._item2 ul li a {
+  margin-right: 20px;
 }
-#wrapper_mobile #footer-new .footer-top .item h4 + img {
-  margin: 0 10px 0 0;
+#wrapper_mobile #footer-new .footer-top ._item2 ul li a img {
+  mix-blend-mode: luminosity;
 }
-#wrapper_mobile #footer-new .footer-top .item a {
-  color: #ed2891;
-  font-size: 20px;
-  font-weight: bold;
+#wrapper_mobile #footer-new .footer-top ._item {
+  margin-bottom: 30px;
 }
-#wrapper_mobile #footer-new .footer-top .item img {
+#wrapper_mobile #footer-new .footer-top ._item:nth-child(1) p {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#wrapper_mobile #footer-new .footer-top ._item:nth-child(1) img {
+  margin-top: 10px;
+}
+#wrapper_mobile #footer-new .footer-top ._item h4 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #6e6e6e;
+  padding-bottom: 10px;
+}
+#wrapper_mobile #footer-new .footer-top ._item ul li {
+  margin-bottom: 10px;
+}
+#wrapper_mobile #footer-new .footer-top ._item ul li a {
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+#wrapper_mobile #footer-new .footer-top ._item ul li a .img {
   width: 30px;
-  margin: 0 10px 0 0;
-}
-#wrapper_mobile #footer-new .footer-top .item h3 {
-  font-size: 20px;
+  height: 30px;
+  background: #686868;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  mix-blend-mode: luminosity;
 }
 
 .nav-fix-bt-detail {

@@ -3415,37 +3415,67 @@ img
           display: none
 
   #footer-new
-    background: #535252
-    .footer-top .item
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-      border-bottom: 1px solid #ebebeb
-      padding: 15px 0
-
-      h4
-        font-size: 20px
-        font-weight: bold
-        margin: 0 10px 0 0
-
-        + img
-          margin: 0 10px 0 0
-
-      a
-        color: #ed2891
-        font-size: 20px
-        font-weight: bold
-
-      img
-        width: 30px
-        margin: 0 10px 0 0
-
-      h3
-        font-size: 20px
+    .footer-copyright
+      background: #444444
+      padding: 10px 0
+      ul
+        display: flex
+        justify-content: center
+        align-items: center
+        li
+          margin: 0 5px
+    .footer-top
+      background: #535252
+      ._item2
+        padding-top: 30px
+        border-top: 1px solid #6e6e6e
+        ul
+          display: inline-block
+          li
+            float: left
+            display: flex
+            align-items: center
+            height: 40px
+            a
+              margin-right: 20px
+            a img
+              mix-blend-mode: luminosity
+      ._item
+        margin-bottom: 30px
+        &:nth-child(1)
+          p
+            font-size: 14px
+            color: #fff
+            text-transform: uppercase
+            margin-bottom: 10px
+          img
+            margin-top: 10px
+        h4
+          font-size: 14px
+          color: #fff
+          text-transform: uppercase
+          margin-bottom: 10px
+          border-bottom: 1px solid #6e6e6e
+          padding-bottom: 10px
+        ul
+          li
+            margin-bottom: 10px
+            a
+              font-weight: 300
+              color: #fff
+              font-size: 14px
+              display: flex
+              align-items: center
+              .img
+                width: 30px
+                height: 30px
+                background: #686868
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 10px
+                mix-blend-mode: luminosity
 
 .nav-fix-bt-detail
   position: fixed
