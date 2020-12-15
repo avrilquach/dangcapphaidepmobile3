@@ -8,21 +8,21 @@ $(document).ready(function() {
 	var video = $(".main-videos");
 	video.owlCarousel({
 		center: true,
-    items:2,
+		items:2,
 		loop:true,
 		nav: true,
-		autoplay: false,
+		autoplay: true,
 	});
-	 $('.close_mobile').click(function(e)
-	 {
-	 		$('.menu-mobile').toggleClass('active');
-	 		$('body').toggleClass('active');
-	 });
 	 $('.menu-click').click(function(e)
 	 {
-	 		$('.menu-mobile').toggleClass('active');
-	 		$('body').toggleClass('active');
+		$('.menu-mobile').toggleClass('active');
+		$(".background_mobile").toggleClass('active');
 	 });
+	 $(".background_mobile").click(function(e){
+		$('.menu-mobile').removeClass('active');
+		$(".background_mobile").removeClass('active');
+	 })
+
 	 $('.menu-mobile ul li').click(function(e){
 	 		$(this).toggleClass('current');
 	 });

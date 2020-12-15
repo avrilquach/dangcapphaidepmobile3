@@ -341,40 +341,46 @@ html
                 a(href='/')
                   img(src='img/youtube.svg' alt='')
       include inc/bottom.jade
-    //.menu-mobile
-      span.close_mobile
-        i.fa.fa-times
-      ul
-        li
-          a(href='#') Thương hiệu
-        li
-          a(href='#') Chăm sóc da
-          ul.sub
+      .background_mobile
+      .menu-mobile  
+        .top.row.align-items-center
+          img(src='img/leftmobile.svg' alt='')
+          ul.row.align-items-center
             li
-              a(href='#') -  Da nhạy cảm
+              a(href="/") Đăng nhập
             li
-              a(href='#') -  Điều trị rạn nứt da
-        li
-          a(href='#') Collagen
-        li
-          a(href='#') Mi, mày, tóc
-        li
-          a(href='#') Sức khỏe
-        li
-          a(href='#') Giảm cân
-        li
-          a(href='#') Nước hoa
-        li
-          a(href='#') Trang điểm
-        li
-          a(href='#') Kinh nghiệm làm đẹp
-    //.form-box-search(style='display: none')
-      .search__input
-        form#form_s
-          i.fa.fa-search
-          input(type='text', name='search_pro', placeholder='Bạn cần tìm gì hôm nay ?')
-          i.fa.fa-times-circle
-        a.cancelSearch Cancel
+              a(href="/") Đăng ký
+        ul.bottom
+          li
+            a(href='#') Thương hiệu
+          li
+            a(href='#') Chăm sóc da
+            ul.sub
+              li
+                a(href='#') -  Da nhạy cảm
+              li
+                a(href='#') -  Điều trị rạn nứt da
+          li
+            a(href='#') Collagen
+          li
+            a(href='#') Mi, mày, tóc
+          li
+            a(href='#') Sức khỏe
+          li
+            a(href='#') Giảm cân
+          li
+            a(href='#') Nước hoa
+          li
+            a(href='#') Trang điểm
+          li
+            a(href='#') Kinh nghiệm làm đẹp
+      .form-box-search(style='display: none')
+        .search__input
+          form#form_s
+            i.fa.fa-search
+            input(type='text', name='search_pro', placeholder='Bạn cần tìm gì hôm nay ?')
+            i.fa.fa-times-circle
+          a.cancelSearch Cancel
     script(type='text/javascript', src='js/jquery.min.js')
     script(type='text/javascript', src='js/bootstrap.js')
     script(type='text/javascript', src='js/owl.carousel.min.js')
