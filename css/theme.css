@@ -4539,11 +4539,14 @@ img {
   padding: 15px;
   border-bottom: 1px solid #A6A6A6;
 }
+.menu-mobile .top ul {
+  margin-left: 15px;
+}
 .menu-mobile .top ul li {
-  margin: 0 7px;
+  margin: 0 5px;
 }
 .menu-mobile .top ul li a {
-  width: 110px;
+  width: 105px;
   height: 30px;
   text-align: center;
   line-height: 30px;
