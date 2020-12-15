@@ -5,6 +5,14 @@ $(document).ready(function() {
 				preloader: true,
 		});
 	$('.lazy').lazy();
+	var video = $(".main-videos");
+	video.owlCarousel({
+		center: true,
+    items:2,
+		loop:true,
+		nav: true,
+		autoplay: false,
+	});
 	 $('.close_mobile').click(function(e)
 	 {
 	 		$('.menu-mobile').toggleClass('active');

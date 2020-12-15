@@ -272,25 +272,25 @@ img
       background: #fff
       border-radius: 5px
 
-  .owl-dots
-    position: absolute
-    right: 15px
-    bottom: 15px
-    .owl-dot
-      margin: 0 0 5px 0
+    .owl-dots
+      position: absolute
+      right: 15px
+      bottom: 15px
+      .owl-dot
+        margin: 0 0 5px 0
 
-      &:last-child
-        margin: 0
+        &:last-child
+          margin: 0
 
-      &.active span
-        background-color: #FF326C
+        &.active span
+          background-color: #FF326C
 
-      span
-        height: 5px
-        width: 5px
-        background-color: #C4C4C4
-        display: block
-        border-radius: 50%
+        span
+          height: 5px
+          width: 5px
+          background-color: #C4C4C4
+          display: block
+          border-radius: 50%
 
   .menu-home-top
     background: #fff
@@ -3415,10 +3415,7 @@ img
           display: none
 
   #footer-new
-    margin: 10px 0 0 0
-    background: #fff
-    padding: 0 0 120px 0
-
+    background: #535252
     .footer-top .item
       display: -webkit-box
       display: -ms-flexbox
@@ -5384,6 +5381,7 @@ img
         padding: 5px 10px
         display: block
 .main-kinhnghiemlamdep
+  margin-bottom: 10px
   li
     width: 80%
     margin-right: 10px
@@ -5435,3 +5433,102 @@ img
         font-weight: 300
         color: #000000
         text-decoration: underline
+.main-videos
+  background: #FFFFFF
+  margin-bottom: 10px
+  padding: 25px 0
+  border-top: 1px solid #E1E1E1
+  position: relative
+  .owl-nav
+    .owl-next
+      background: url("../img/right.svg") no-repeat
+      width: 14px
+      height: 30px
+      position: absolute
+      bottom: 45px
+      right: 26%
+      text-indent: -9999px
+    .owl-prev
+      background: url("../img/left.svg") no-repeat
+      width: 14px
+      height: 30px
+      position: absolute
+      bottom: 45px
+      left: 23%
+      text-indent: -9999px
+  .owl-item
+    padding-bottom: 95px
+    padding-right: 10px
+    position: relative
+    &::after
+      content: ""
+      border-bottom: 1px solid #E1E1E1
+      position: absolute
+      bottom: 81px
+      width: 100%
+    &.center
+      &::before
+        content: ""
+        position: absolute
+        bottom: 80px
+        width: calc(100% - 30px)
+        height: 4px
+        background: #000
+        z-index: 12
+        left: 10px
+      .img
+        &::after 
+          background: url("../img/play.svg") no-repeat
+          content: ""
+          position: absolute
+          width: 32px
+          height: 32px
+          margin: 0 auto
+          left: 0
+          right: 0
+          top: 40%
+          z-index: 10
+  .item
+    .img
+      position: relative
+      &::before
+        content: ""
+        background: rgba(0, 0, 0, 0.3)
+        border-radius: 5px
+        position: absolute
+        left: 0
+        width: 100%
+        height: 100%
+      img
+        border-radius: 5px
+    p
+      font-size: 14px
+      font-weight: 300
+      text-align: center
+      color: #000
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      padding-right: 10px
+      height: 65px
+      overflow: hidden
+      text-transform: uppercase
+      width: 80%
+      margin: 0 auto
+.main-information
+  margin-bottom: 10px
+  li
+    margin: 0 10px
+    width: 80%
+  .item
+    border: 1px solid #353535
+    background: #FFFFFF
+    height: 100px
+    border-radius: 5px
+    img
+      margin-right: 20px
+    p
+      font-size: 16px
+      color: #353535
+      font-weight: 300
