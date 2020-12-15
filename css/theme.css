@@ -5536,10 +5536,10 @@ img {
 }
 
 .main-keyword {
+  background: #fff;
   margin-bottom: 10px;
 }
 .main-keyword ul {
-  background: #fff;
   padding: 10px;
 }
 .main-keyword ul li {
