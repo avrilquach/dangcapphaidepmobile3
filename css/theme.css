@@ -260,7 +260,7 @@ img {
   display: none;
 }
 #wrapper_mobile #header .cart {
-  padding: 0 20px;
+  padding: 0 14px;
   position: relative;
   float: right;
 }
@@ -4540,7 +4540,7 @@ img {
   border-bottom: 1px solid #A6A6A6;
 }
 .menu-mobile .top ul li {
-  margin: 0 10px;
+  margin: 0 7px;
 }
 .menu-mobile .top ul li a {
   width: 110px;
@@ -5711,7 +5711,7 @@ img {
 }
 .main-information li {
   margin: 0 10px;
-  width: 65%;
+  width: 280px;
 }
 .main-information .item {
   border: 1px solid #353535;
