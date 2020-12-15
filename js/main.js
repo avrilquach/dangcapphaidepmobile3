@@ -22,7 +22,10 @@ $(document).ready(function() {
 		$('.menu-mobile').removeClass('active');
 		$(".background_mobile").removeClass('active');
 	 })
-
+	 $(".close_mobile").click(function(e){
+		$('.menu-mobile').removeClass('active');
+		$(".background_mobile").removeClass('active');
+	 })
 	 $('.menu-mobile ul li').click(function(e){
 	 		$(this).toggleClass('current');
 	 });
