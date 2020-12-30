@@ -4,7 +4,88 @@ html
   body.m
     #wrapper_mobile
       include inc/header.jade
-      
+      .styleproduct
+        h3 CÓ 1,705 NGƯỜI ĐANG XEM, 733 KHÁCH ĐẶT MUA
+        .khach_mua_hang
+          table
+            tr
+              td Nghiêm Vũ Hoàng 
+              td xxxx491878	
+              td 
+                img(src='img/icon-product1.svg' alt='')
+                | Chờ xác nhận
+              td 49 phút
+            tr
+              td Nghiêm Vũ Hoàng 
+              td xxxx491878	
+              td 
+                img(src='img/icon-product2.svg' alt='')
+                | Chờ xác nhận
+              td 49 phút
+            tr
+              td Nghiêm Vũ Hoàng 
+              td xxxx491878	
+              td 
+                img(src='img/icon-product1.svg' alt='')
+                | Chờ xác nhận
+              td 49 phút
+            tr
+              td Nghiêm Vũ Hoàng 
+              td xxxx491878	
+              td 
+                img(src='img/icon-product2.svg' alt='')
+                | Chờ xác nhận
+              td 49 phút
+      // Products
+      section.products.heading
+        .container
+          .head
+            h2 sản phẩm cùng thương hiệu 
+            a(href="#")
+              img(src='img/arrowright2.svg')
+          .main-products.swiper-container
+            ul.swiper-wrapper
+              -for(i=0;i<5;i++)
+                li.swiper-slide
+                  .inner
+                    img.product(src='img/image2.jpg' alt='')
+                    span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+                    span.star.row.align-items-center
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star2.svg' alt='')
+                      span (20)
+                    span.price.row.align-items-center
+                      span.new 500.000đ
+                      span.old 750.000đ
+                  a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+      // Products
+      section.products.heading
+        .container
+          .head
+            h2 sản phẩm cùng chức năng
+            a(href="#")
+              img(src='img/arrowright2.svg')
+          .main-products.swiper-container
+            ul.swiper-wrapper
+              -for(i=0;i<5;i++)
+                li.swiper-slide
+                  .inner
+                    img.product(src='img/image2.jpg' alt='')
+                    span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+                    span.star.row.align-items-center
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star2.svg' alt='')
+                      span (20)
+                    span.price.row.align-items-center
+                      span.new 500.000đ
+                      span.old 750.000đ
+                  a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
       .styleproduct
         h3 đánh giá nhận xét
       .danhgianhanxet
@@ -104,29 +185,12 @@ html
                       | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                       .popup-gallery
                         a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                          img(src='https://unsplash.it/1200/800?image=841').gallery2
                         a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                          img(src='https://unsplash.it/1200/800?image=841').gallery2
                         a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
-                        a 
-                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                          img(src='https://unsplash.it/1200/800?image=841').gallery2
+                     
                   .replay.row.align-items-center
                     a(data-toggle="modal" data-target="#exampleModal") Trả lời
                     a(href='#')
@@ -331,3 +395,4 @@ html
     script(type='text/javascript', src='js/swiper.js')
     script(type='text/javascript', src='js/jquery.magnific-popup.js')
     script(type='text/javascript', src='js/main.js')
+  

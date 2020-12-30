@@ -5753,6 +5753,38 @@ img {
 .popup-gallery {
   margin-top: 10px;
 }
-.popup-gallery .gallery2 {
+.popup-gallery img.gallery2 {
   margin: 0 10px 10px 0;
+  width: 95px;
+  height: 78px;
+  border-radius: 5px;
+}
+
+.khach_mua_hang {
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding: 30px 20px;
+  overflow: scroll;
+}
+.khach_mua_hang table {
+  width: 100%;
+}
+.khach_mua_hang table tr td {
+  padding: 20px;
+  border: 1px solid #DADADA;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  min-width: 200px;
+}
+.khach_mua_hang table tr td img {
+  margin-right: 5px;
+}
+.khach_mua_hang table tr td:nth-child(1) {
+  text-transform: uppercase;
+}
+.khach_mua_hang table tr:nth-child(even) {
+  background: #F5F5F5;
 }
