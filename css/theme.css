@@ -104,6 +104,10 @@ img {
   padding: 20px 0 10px 0;
 }
 
+.padbt0_60 {
+  padding: 0 0 60px 0;
+}
+
 .heading h1, .heading h2 {
   font-size: 20px;
   font-weight: 300;
@@ -3323,9 +3327,6 @@ img {
 }
 #wrapper_mobile .breadcrumbs ul li:last-child::after {
   display: none;
-}
-#wrapper_mobile #footer-new {
-  padding: 0 0 60px 0;
 }
 #wrapper_mobile #footer-new .footer-copyright {
   background: #444444;
