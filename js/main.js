@@ -277,4 +277,9 @@ $(document).ready(function() {
 		var data = $(this).attr("data-value");
 		$(".choose-star input[name='rating']").val(data);
 	})
+	$(".thongtinsanpham .show-data a").click(function(e) {
+		$(".thongtinsanpham .content").css("height", "auto");
+		$(".thongtinsanpham .content").css("overflow", "unset");
+		$(".thongtinsanpham .show-data").hide();
+})
 });

@@ -5566,7 +5566,7 @@ img
 .khach_mua_hang
   background: #FFFFFF
   border-radius: 5px
-  margin-bottom: 25px
+  margin-bottom: 10px
   padding: 30px 20px
   overflow: scroll
   table
@@ -5591,6 +5591,9 @@ img
         background: #F5F5F5
 .gallery
   position: relative
+  #big
+    padding-top: 10px
+    background: #fff
   #counter
     background: #C4C4C4
     border-radius: 30px
@@ -5608,6 +5611,18 @@ img
   background: #FFFFFF
   padding: 15px
   margin-bottom: 10px
+  .bg-giamgia
+    background: url("../img/bggiamgia.png") no-repeat center center
+    height: 75px
+    background-size: contain
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px
+    p
+      font-size: 16px
+      color: #444444
+      padding-left: 10px
   h1
     font-size: 25px
     font-weight: 400
@@ -5615,8 +5630,31 @@ img
     overflow: hidden
     line-height: 30px
     margin-bottom: 10px
-
+  &.thongtinsanpham
+    position: relative
+    .content
+      h1, h2, h3, h4, h5
+        line-height: 1
+    .show-data
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) -1%, #FFFFFF 100%)
+      border-radius: 5px
+      height: 100px
+      position: absolute
+      bottom: 0
+      width: 100%
+      left: 0
+      padding-bottom: 30px
+      a 
+        border: 0.5px solid #000000
+        border-radius: 5px
+        width: 260px
+        height: 40px
   .mua-chung
+    text-align: center
+    a.xct
+      font-size: 16px
+      font-weight: 300
+      color: #000
     h4
       font-size: 20px
       font-weight: 400
@@ -5694,26 +5732,23 @@ img
       margin-bottom: 20px
 
       .item
-        width: 28%
+        width: 33.33%
         background: #FFFFFF
-        border: 1px solid #AFAFAF
-        padding: 16px
         position: relative
-
+        padding: 0 10px
         &.active
           opacity: 0.3
 
         img
           display: block
           margin: 0 auto
-          width: 115px
-          height: 120px
+    
 
         &::after
           content: "+"
           position: absolute
-          right: -25px
-          top: 65px
+          right: 0
+          top: 45%
           font-size: 16px
           font-weight: 400
           color: #000
@@ -5722,31 +5757,18 @@ img
           display: none
 
   .promotions
-    margin-bottom: 20px
-    border-bottom: 1px solid #B6B6B6
-
+    display: flex
     li
-      margin-bottom: 20px
-
-    .img
-      width: 25px
-      margin-right: 20px
-
+      width: 33.33%
+      text-align: center
+      padding: 0 5px
+      .img
+        height: 20px
+        margin-bottom: 10px
     .text
       span
-        font-size: 16px
-        font-weight: 400
-        color: #000
-        text-transform: uppercase
-
-      p
-        font-size: 16px
+        font-size: 12px
         font-weight: 300
-        color: #000
-
-      ul li
-        margin-right: 10px
-
       img
         mix-blend-mode: luminosity
 
