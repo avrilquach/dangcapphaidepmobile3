@@ -5,7 +5,168 @@ html
     #wrapper_mobile
       include inc/header.jade
       
-
+      .styleproduct
+        h3 đánh giá nhận xét
+      .danhgianhanxet
+        .reviewvote
+          .row.align-items-center.justify-content-between.item
+            span.number_total.row.align-items-center.justify-content-center
+              | 3.5
+              img(src='img/Starbig.svg')
+            ul
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 5
+                  img(src='img/Star3.svg')
+                span.line
+                  div(style="width: 100%").percent
+                span.text 10 đánh giá
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 4
+                  img(src='img/Star3.svg')
+                span.line
+                  div(style="width: 30%").percent
+                span.text 3 đánh giá
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 3
+                  img(src='img/Star3.svg')
+                span.line
+                span.text 3 đánh giá
+              li.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 2
+                  img(src='img/Star3.svg')
+                span.line
+                  i
+                span.text 0 đánh giá
+              li.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 1
+                  img(src='img/Star3.svg')
+                span.line
+                  i
+                span.text 0 đánh giá
+            a.send-comment(href='#').row.align-items-center.justify-content-center Gửi đánh giá của bạn
+          .row.align-items-center.item2.justify-content-center
+            span.title
+              | Bạn thấy sản phẩm như thế nào ?
+              br
+              | (Chọn sao nhé)
+            .choose-star
+              input(name="rating" value="3" type="hidden")
+              ul
+                li(data-value=5)
+                  span Tuyệt vời quá
+                li(data-value=4)
+                  span Rất tốt
+                li(data-value=3)
+                  span Bình thường
+                li(data-value=2)
+                  span Tạm được
+                li(data-value=1)
+                  span Không thích
+               
+        form.comments-review
+          span.head Đánh giá sản phẩm
+          textarea.comments(name='comments')
+          span.options.row.align-items-center
+            span.files
+              span
+                img(src='img/camera.svg')
+                | Gửi ảnh
+              input(type='file')
+        .form.comments-review2
+          input(type='text' name='hoten' placeholder='Họ và tên (bắt buộc)').input
+          input(type='text' name='email' placeholder='Email').input
+          input(type='submit' value='Gửi').submit
+        .box-comments.row.align-items-center.justify-content-between
+          span.count 100 Bình luận
+        #comments.comments-area
+          .replay_comment
+            .l
+              .row
+                .left
+                  img(src="img/avatar.png")
+                .right
+                  .name
+                    h5 Nguyễn Mạnh Linh
+                      img(src="img/camketchinhhang.svg")
+                      span Đã mua hàng
+                    .rate
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star2.svg")
+                    .content
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      .popup-gallery
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                        a 
+                          img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery2
+                  .replay.row.align-items-center
+                    a(data-toggle="modal" data-target="#exampleModal") Trả lời
+                    a(href='#')
+                      img(src="img/like.svg")
+                      | Thích
+                    a.time Cách đây 5 giờ
+              .persion-replay
+                .pr
+                  .left.row.name.align-items-center
+                    img(src="img/avatar.png")
+                    h5 Ngan Giang
+                    span.md.row.align-items-center.justify-content-center Quản trị viên               
+                  .right
+                    .content
+                      | Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
+                    .replay.row.align-items-center
+                      a(data-toggle="modal" data-target="#exampleModal") Trả lời
+                      a(href='#')
+                        img(src="img/like.svg")
+                        | Hài lòng
+                      a(href='#')
+                        img(src="img/dislike.svg")
+                        | Không hài lòng
+                      a.time Cách đây 5 giờ
+                .pr
+                  .left.row.name.align-items-center
+                    img(src="img/avatar.png")
+                    h5 Ngan Giang
+                  .right
+                    .content
+                      | Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
+                    .replay.row.align-items-center
+                      a(data-toggle="modal" data-target="#exampleModal") Trả lời
+                      a(href='#')
+                        img(src="img/like.svg")
+                        | Hài lòng
+                      a(href='#')
+                        img(src="img/dislike.svg")
+                        | Không hài lòng
+                      a.time Cách đây 5 giờ
       .main-information.swiper-container
         ul.swiper-wrapper
           li.swiper-slide

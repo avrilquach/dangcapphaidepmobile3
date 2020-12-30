@@ -272,4 +272,9 @@ $(document).ready(function() {
 	$(".popup-dang-ky .close").click(function(e){
 		$(".popup-dang-ky").removeClass("active");
 	})
+	// rating 
+	$(".choose-star ul li").click(function(e){
+		var data = $(this).attr("data-value");
+		$(".choose-star input[name='rating']").val(data);
+	})
 });
