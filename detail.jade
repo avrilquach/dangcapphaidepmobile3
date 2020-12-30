@@ -4,6 +4,76 @@ html
   body.m
     #wrapper_mobile
       include inc/header.jade
+      .gallery
+        #big.owl-carousel.owl-theme
+          .item
+            img.lazy(data-src='img/product-detail.jpg')
+          .item
+            img.lazy(data-src='img/product-detail.jpg')
+          .item
+            img.lazy(data-src='img/product-detail.jpg')
+          .item
+            img.lazy(data-src='img/product-detail.jpg')
+        #counter
+      .detail
+        h1 Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa
+        span.options.row.align-items-center
+          span.rate
+            img(src='img/Star3.svg')
+            img(src='img/Star3.svg')
+            img(src='img/Star3.svg')
+            img(src='img/Star3.svg')
+            img(src='img/Star2.svg')
+        span.options.row.align-items-center
+          span.comments
+            img(src='img/comment.svg')
+            | Xem đánh giá (03)
+          span.write-comment
+            img(src='img/pencil.svg')
+            | Viết đánh giá (02)
+        span.options.row.align-items-end
+          select.number
+            option(value = "1") 1
+          span.price-new 3.000.000đ
+          span.price-old 5.000.000đ
+      .detail
+        ul.tag
+          li
+            a(href="#") Chăm sóc da
+          li
+            a(href="#") Chăm sóc da
+          li
+            a(href="#") Chăm sóc da
+        ul.description
+          li.row.align-items-center
+            span Hãng sản xuất:
+            img(src='img/hang.svg' alt='')
+          li
+            span Xuất xứ: 
+            | Đức
+          .radio
+            audio(controls='')
+              source(src='horse.ogg' type='audio/ogg')
+              source(src='horse.mp3' type='audio/mpeg')
+              | Your browser does not support the audio element.
+      .detail
+        ul.promotions
+            li.row
+              .img
+                img(src='img/icon14.svg' alt='')
+              .text 
+                span Miễn phí ship & Miễn phí hoàn trả
+            li.row
+              .img
+                img(src='img/icon15.svg' alt='')
+              .text 
+                span Giao hàng tiêu chuẩn: dự kiến từ 24 tiếng đến 72 tiếng.
+            li.row
+              .img
+                img(src='img/icon16.svg' alt='')
+              .text 
+                span Chấp nhận thanh toán
+          
       .styleproduct
         h3 CÓ 1,705 NGƯỜI ĐANG XEM, 733 KHÁCH ĐẶT MUA
         .khach_mua_hang
