@@ -3169,6 +3169,7 @@ img {
 
 .popup-addcart.active::before {
   bottom: 0;
+  left: 0;
 }
 .popup-addcart.active .addcart {
   bottom: 0;
