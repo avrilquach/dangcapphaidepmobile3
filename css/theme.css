@@ -5865,12 +5865,15 @@ img {
 .detail .mua-chung {
   text-align: center;
 }
-.detail .mua-chung a.xct {
+.detail .mua-chung a.xct, .detail .mua-chung a.tg {
   font-size: 16px;
   font-weight: 300;
   color: #000;
   margin-top: 10px;
   display: block;
+}
+.detail .mua-chung a.xct img, .detail .mua-chung a.tg img {
+  margin-left: 5px;
 }
 .detail .mua-chung h4 {
   font-size: 20px;

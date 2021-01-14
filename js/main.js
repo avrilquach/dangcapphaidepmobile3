@@ -297,6 +297,12 @@ $(".mua-chung input[type='checkbox']").click(function(e) {
 })
 $(".mua-chung .xct").click(function(e){
 	$(".mua-chung .detail2").show();
-
+	$(".mua-chung .xct").hide();
+	$(".mua-chung .tg").show();
+})
+$(".mua-chung .tg").click(function(e){
+	$(".mua-chung .detail2").hide();
+	$(".mua-chung .tg").hide();
+	$(".mua-chung .xct").show();
 })
 });
