@@ -290,4 +290,13 @@ $(".size li").click(function(e) {
 	$(".options .price-new").html(data);
 	$(".options .price-old").html(old);
 })
+$(".mua-chung input[type='checkbox']").click(function(e) {
+	var id = $(this).attr("id");
+	var ele = id + "_new";
+	$("#" + ele).toggleClass("active");
+})
+$(".mua-chung .xct").click(function(e){
+	$(".mua-chung .detail2").show();
+
+})
 });

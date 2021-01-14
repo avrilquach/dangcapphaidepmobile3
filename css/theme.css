@@ -5869,6 +5869,8 @@ img {
   font-size: 16px;
   font-weight: 300;
   color: #000;
+  margin-top: 10px;
+  display: block;
 }
 .detail .mua-chung h4 {
   font-size: 20px;
@@ -5876,10 +5878,10 @@ img {
   color: #000000;
   margin-bottom: 10px;
 }
-.detail .mua-chung .detail .item {
+.detail .mua-chung .detail2 .item {
   margin-bottom: 10px;
 }
-.detail .mua-chung .detail .item .title {
+.detail .mua-chung .detail2 .item .title {
   width: 350px;
   overflow: hidden;
   white-space: nowrap;
@@ -5887,9 +5889,9 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 30px;
 }
-.detail .mua-chung .detail .item .title input[type=checkbox] {
+.detail .mua-chung .detail2 .item .title input[type=checkbox] {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -5897,7 +5899,7 @@ img {
   opacity: 0;
   left: 0;
 }
-.detail .mua-chung .detail .item .title input[type=checkbox] + span {
+.detail .mua-chung .detail2 .item .title input[type=checkbox] + span {
   border: 1px solid #000;
   width: 20px;
   height: 20px;
@@ -5907,29 +5909,31 @@ img {
   top: 0;
   z-index: 0;
 }
-.detail .mua-chung .detail .item .title input[type=checkbox]:checked + span {
+.detail .mua-chung .detail2 .item .title input[type=checkbox]:checked + span {
   background: url("../img/check2.svg") no-repeat;
   border: none;
 }
-.detail .mua-chung .detail .item img {
+.detail .mua-chung .detail2 .item img {
   margin-right: 10px;
 }
-.detail .mua-chung .detail .item .price {
+.detail .mua-chung .detail2 .item .price {
   font-size: 14px;
   font-weight: 400;
   color: #000000;
+  margin-left: 30px;
 }
 .detail .mua-chung a.add {
-  background: #5D5D5D;
+  background: #FE2B6D;
   border-radius: 3px;
   width: 100%;
-  height: 30px;
-  font-size: 14px;
+  height: 40px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
 .detail .mua-chung .total {
-  margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: 0.5px solid #B6B6B6;
 }
 .detail .mua-chung .total span:nth-child(1) {
   font-size: 14px;
