@@ -282,4 +282,12 @@ $(document).ready(function() {
 		$(".thongtinsanpham .content").css("overflow", "unset");
 		$(".thongtinsanpham .show-data").hide();
 })
+$(".size li").click(function(e) {
+	$(".size li").removeClass("active");
+	$(this).addClass("active");
+	var old = $(this).find("span.old").html();
+	var data = $(this).find("span.new").html();
+	$(".options .price-new").html(data);
+	$(".options .price-old").html(old);
+})
 });
