@@ -1,0 +1,19 @@
+// Modal
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true').stylett(style="position: fixed")
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Trả lời bình luận
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-between
+            .input-column2
+                input(type="text" name="ten" placeholder="Tên của bạn").input
+            .input-column2
+                input(type="text" name="phong" placeholder="Nhập số điện thoại").input
+        .row
+            .input-column1
+                textarea(placeholder="Bình luận của bạn" name="binhluan").input.textarea
+      .modal-footer
+        button.btn.btn-primary(type='button') Trả lời bình luận

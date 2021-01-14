@@ -6159,3 +6159,85 @@ img {
 .detail .comments img, .detail .write-comment img {
   margin-right: 10px;
 }
+
+.stylett {
+  position: relative;
+}
+.stylett .icon {
+  position: absolute;
+  left: 30px;
+}
+.stylett .content {
+  padding: 0px 0 0 50px;
+}
+.stylett .head {
+  margin-bottom: 20px;
+}
+.stylett .head h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.stylett .head p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.stylett .head p a {
+  color: #106909;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.stylett .input-column2 {
+  width: 48%;
+}
+.stylett .input-column1 {
+  width: 100%;
+}
+.stylett .input-column3 {
+  width: 32%;
+}
+.stylett .input {
+  background: #FFFFFF;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.stylett .input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #545454;
+}
+.stylett .textarea {
+  height: 100px !important;
+}
+.stylett .input2 {
+  background: #FFFFFF;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #545454;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+}
+.stylett .input3 {
+  border: none;
+  border-bottom: 1px solid #C6C6C6;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.stylett .input3::placeholder {
+  color: #B5B5B5;
+}
