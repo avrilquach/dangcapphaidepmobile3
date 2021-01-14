@@ -1510,31 +1510,31 @@ img {
 #wrapper_mobile .cart .list-cart .cart_item .item .des span.promotions {
   color: #0f890e;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span {
   display: block;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.price {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.price {
   display: flex;
   align-items: center;
   margin: 0 0 5px 0;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.price .price_new {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.price .price_new {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin: 0 10px 0 0;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.price .price_old {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.price .price_old {
   font-size: 13px;
   color: #919697;
   text-decoration: line-through;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.number {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.number {
   display: flex;
   align-items: center;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.number .minius, #wrapper_mobile .cart .list-cart .cart_item .item .detail span.number .plus {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.number .minius, #wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.number .plus {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -1543,7 +1543,7 @@ img {
   font-size: 20px;
   text-align: center;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.number input.number {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.number input.number {
   border: none;
   font-size: 18px;
   width: 30px;
@@ -1551,16 +1551,16 @@ img {
   text-align: center;
   color: #000;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.favourite {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.favourite {
   display: flex;
   align-items: center;
   color: #4b5452;
   font-size: 15px;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail span.favourite i {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 span.favourite i {
   margin: 0 10px 0 0;
 }
-#wrapper_mobile .cart .list-cart .cart_item .item .detail .option {
+#wrapper_mobile .cart .list-cart .cart_item .item .detail2 .option {
   display: flex;
   justify-content: space-between;
   align-items: center;
