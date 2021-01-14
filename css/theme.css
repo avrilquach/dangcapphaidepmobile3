@@ -6132,7 +6132,7 @@ img {
 }
 .detail .size li:hover::after, .detail .size li.active::after {
   position: absolute;
-  background: url("../img/icon10.svg") no-repeat;
+  background: url("../img/icon10_new.svg") no-repeat;
   bottom: 5px;
   right: 3px;
   content: "";
