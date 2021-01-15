@@ -6015,3 +6015,211 @@ img
 
 		&::placeholder
 			color: #B5B5B5
+.box-bottom 
+	.bg
+		position: fixed 
+		bottom: 0
+		background: #FFFFFF
+		z-index: 20
+		height: 80%
+		width: 100%
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		.head
+			padding: 15px
+			border-bottom: 0.5px solid #A7A7A7
+			h2 
+				font-size: 20px
+				font-weight: 600
+				color: #000
+		.box-filter
+			overflow: scroll
+			height: 100%
+			padding-bottom: 10px
+			&.box-fiter-price
+				.box-filter-2
+					padding: 0 15px
+				.end
+					.button
+						background: #212121
+						border-radius: 5px
+						width: 100%
+						height: 40px
+						font-size: 16px
+						font-weight: 600
+						color: #fff
+						margin-top: 10px
+					padding: 0 15px
+	&::before
+		content: ""
+		position: fixed
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,0.5)
+		left: 0
+		z-index: 18
+.sidebar_thuonghieu
+	padding: 0
+
+	.box-filter
+		border-bottom: 1px solid #DBDBDB
+
+		h2
+			clear: both
+			padding: 16px
+			font-size: 16px
+			font-weight: 600
+			text-transform: uppercase
+			cursor: pointer
+
+		&.active
+			h2
+			
+
+				&.top
+					border-bottom: 1px solid #DBDBDB
+				&.top
+					padding: 16px
+		.box-filter-4
+			padding: 0 15px
+			.ct
+				margin: 0 -1%
+			input[type=checkbox]
+				opacity: 0
+				position: absolute
+				left: 0
+
+				&:checked + span
+					background: #6F6E6E
+					color: #fff
+			.box-price
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 10px
+			#price_from, #price_to
+				background: #FFFFFF
+				border: 0.5px solid #5F5F5F
+				border-radius: 3px
+				width: 47%
+				height: 40px
+				color: #898989
+				font-size: 14px
+				font-weight: 300
+				text-align: center
+			&.two
+				label
+					width: 23% 
+					margin: 0 1% 10px 1%
+					float: left
+					span
+						background: #F5F5F5
+						border-radius: 3px
+						height: 35px
+						display: block
+						font-size: 14px
+						font-weight: 300
+						line-height: 35px
+						text-align: center
+			&.one
+				label
+					width: 48% 
+					margin: 0 1% 10px 1%
+					float: left
+					span
+						background: #F5F5F5
+						border-radius: 3px
+						height: 35px
+						display: block
+						font-size: 14px
+						font-weight: 300
+						line-height: 35px
+						text-align: center
+
+		.box-filter-2
+			&:last-child.top
+				border-bottom: none
+
+			h3
+				font-size: 14px
+				font-weight: 600
+				background: #EDEDED
+				color: #000
+				padding: 15px
+				span
+					font-size: 14px
+					font-weight: 300
+			label
+				font-size: 15px
+				font-weight: 300
+				line-height: 30px
+				color: #000000
+				display: flex
+				cursor: pointer
+				position: relative
+
+				input[type=checkbox]
+					opacity: 0
+					position: absolute
+					left: 0
+
+					&:checked + span::after
+						content: ""
+						background: url("../img/check_icon.svg") no-repeat
+						position: absolute
+						top: 10px
+						right: 0
+						width: 15px
+						height: 10px
+
+			.box-price
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 16px
+				clear: both
+
+			#price_from, #price_to
+				background: #FFFFFF
+				border: 0.5px solid #545353
+				border-radius: 3px
+				width: 130px
+				height: 35px
+				font-size: 15px
+				font-weight: 300
+				text-align: center
+				color: #B8B8B8
+
+			.box-filter-3
+				padding: 0 20px
+
+				h4
+					font-size: 14px
+					font-weight: 600
+					line-height: 30px
+					color: #000 
+					padding: 10px 0
+				label
+					padding-left: 10px
+					font-size: 14px
+					font-weight: 300
+					line-height: 30px
+					color: #000000
+					display: flex
+					cursor: pointer
+					position: relative
+
+					input[type=checkbox]
+						opacity: 0
+						position: absolute
+						left: 0
+
+						&:checked + span::after
+							content: ""
+							background: url("../img/check_icon.svg") no-repeat
+							position: absolute
+							top: 10px
+							right: 0
+							width: 15px
+							height: 10px

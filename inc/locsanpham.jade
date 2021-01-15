@@ -1,0 +1,55 @@
+.box-bottom
+  .sidebar_thuonghieu.bg
+    .head.row.align-items-center.justify-content-between
+      span.back2
+        img(src="img/back2.svg")
+      h2 Lọc sản phẩm
+      span.close2
+        img(src="img/close2.svg")
+    .box-filter.box-fiter-price
+      h2 Mức giá
+      .box-filter-4.one
+        .box-price
+          input#price_from(type='text' name='price_from' placeholder='Từ')
+          span -
+          input#price_to(type='text' name='price_to' placeholder='100.000')
+        .ct
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel1 Nhỏ hơn 500.000đ
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel2 500.000₫ - 2 triệu
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel3 2 triệu- 5 triệu
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel4 5 triệu - 10 triệu
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel5 Lớn hơn 10 triệu
+      h2 Sử dụng cho
+      .box-filter-4.two
+        .ct
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel1 Mắt
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel2 Mặt
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel3 Body
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel3 Tay
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel4 Môi
+          label
+            input(type='checkbox' name='check_value')
+            span.pricelevel5 Khác
+      .end
+        button(type="button").button Chọn
+

@@ -274,7 +274,9 @@ $(document).ready(function() {
 	})
 	// rating 
 	$(".choose-star ul li").click(function(e){
+		$(".choose-star li").removeClass("active");
 		var data = $(this).attr("data-value");
+		$(this).addClass("active");
 		$(".choose-star input[name='rating']").val(data);
 	})
 	$(".thongtinsanpham .show-data a").click(function(e) {
