@@ -5,10 +5,11 @@ html
     #wrapper_mobile
       include inc/header.jade
       //include inc/locsanpham.jade
+      //include inc/danhmuc.jade
       .category
         .top-category
         .middle-category
-          ul
+          ul.top
             li#thuonghieu
               a Thương hiệu
                 img(src='img/arrowdowncate.svg' alt='')
@@ -23,23 +24,79 @@ html
                 img(src='img/arrowdowncate.svg' alt='') 
           .open.thuonghieu
             .box-filter.box-fiter-price
+              .form 
+                input(type="text" placeholder="Tìm Kiếm")
+                button(type="button")
+                  img(src='img/search2.svg' alt='') 
+              .alpha
+                ul
+                  li
+                    a(href="#") A
+                  li
+                    a(href="#") B
+                  li
+                    a(href="#") C
+                  li
+                    a(href="#") D
+                  li
+                    a(href="#") E
+                  li
+                    a(href="#") F
+                  li
+                    a(href="#") G
+                  li
+                    a(href="#") H
+                  li
+                    a(href="#") I
+                  li
+                    a(href="#") J
+                  li
+                    a(href="#") K
+                  li
+                    a(href="#") L
+                  li
+                    a(href="#") M
+                  li
+                    a(href="#") N
+                  li
+                    a(href="#") O
+                  li
+                    a(href="#") P 
+                  li
+                    a(href="#") Q
+                  li
+                    a(href="#") R
+                  li
+                    a(href="#") S
+                  li
+                    a(href="#") T
+                  li
+                    a(href="#") U
+                  li
+                    a(href="#") V
+                  li
+                    a(href="#") W
+                  li
+                    a(href="#") X
+                  li
+                    a(href="#") S
+                  li
+                    a(href="#") T
+                  li
+                    a(href="#") U
+                  li
+                    a(href="#") V
+                  li
+                    a(href="#") W
+                  
+                  
               .box-filter-4.one
                 .ct
-                  label
-                    input(type='checkbox' name='check_value')
-                    span.pricelevel1 Nhỏ hơn 500.000đ
-                  label
-                    input(type='checkbox' name='check_value')
-                    span.pricelevel2 500.000₫ - 2 triệu
-                  label
-                    input(type='checkbox' name='check_value')
-                    span.pricelevel3 2 triệu- 5 triệu
-                  label
-                    input(type='checkbox' name='check_value')
-                    span.pricelevel4 5 triệu - 10 triệu
-                  label
-                    input(type='checkbox' name='check_value')
-                    span.pricelevel5 Lớn hơn 10 triệu
+                  -for(i=0;i<6;i++)
+                    label
+                      input(type='checkbox' name='check_value')
+                      span Alex
+                  
       // Footer
       footer#footer-new
         .footer-top.pad30_0

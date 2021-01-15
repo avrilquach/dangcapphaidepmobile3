@@ -6063,8 +6063,6 @@ img
 	padding: 0
 
 .box-filter
-	border-bottom: 1px solid #DBDBDB
-
 	h2
 		clear: both
 		padding: 16px
@@ -6227,13 +6225,62 @@ img
 	.middle-category
 		background: #fff
 		padding: 10px
+		position: relative
+		ul.top
+			position: relative
+			z-index: 4
+		.alpha 
+			padding: 15px
+			display: inline-block
+			width: 100%
+			ul
+				li
+					width: 10.5%
+					background: #FFF2F2
+					border-radius: 5px
+					float: left
+					margin: 5px 1%
+					padding: 8px 0
+					a
+						display: flex
+						align-items: center
+						justify-content: center
+						font-size: 16px
+						font-weight: 300
+						color: #000
+		.form 
+			padding: 0 15px
+			position: relative
+			input
+				border: 0.5px solid #A4A4A4
+				border-radius: 5px
+				height: 45px
+				width: 100%
+				font-size: 16px
+				font-weight: 300
+				padding: 0 10px 0 50px
+				color: #8C8C8C
+			button
+				position: absolute
+				border: none
+				top: 10px
+				left: 25px
+				background: none
+				outline: none
+
 		.open 
 			display: none
 			position: absolute
 			border-top: 0.5px solid #CBCBCB
 			background: #fff
 			left: 0 
-		ul
+			z-index: 2
+			top: 44px
+			padding: 15px 0
+			width: 100%
+			&.active
+				display: block
+		ul.top
 			display: flex
 			justify-content: space-between
 			li
@@ -6243,6 +6290,9 @@ img
 				font-weight: 300
 				color: #222222
 				padding: 3px 5px
+				height: 30px
+				@media(max-width: 320px)
+					font-size: 11px
 				&:nth-child(2)
 					width: 20%
 				&:nth-child(4)
@@ -6265,5 +6315,6 @@ img
 					border-bottom: none
 					border-radius: 3px
 					background: #fff
+					height: 36px
 					.open
 						display: block
