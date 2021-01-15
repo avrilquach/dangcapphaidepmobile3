@@ -4,7 +4,42 @@ html
   body.m
     #wrapper_mobile
       include inc/header.jade
-      include inc/locsanpham.jade
+      //include inc/locsanpham.jade
+      .category
+        .top-category
+        .middle-category
+          ul
+            li#thuonghieu
+              a Thương hiệu
+                img(src='img/arrowdowncate.svg' alt='')
+            li 
+              a Loại da
+                img(src='img/arrowdowncate.svg' alt='')
+            li
+              a Chức năng
+                img(src='img/arrowdowncate.svg' alt='') 
+            li 
+              a Sắp xếp
+                img(src='img/arrowdowncate.svg' alt='') 
+          .open.thuonghieu
+            .box-filter.box-fiter-price
+              .box-filter-4.one
+                .ct
+                  label
+                    input(type='checkbox' name='check_value')
+                    span.pricelevel1 Nhỏ hơn 500.000đ
+                  label
+                    input(type='checkbox' name='check_value')
+                    span.pricelevel2 500.000₫ - 2 triệu
+                  label
+                    input(type='checkbox' name='check_value')
+                    span.pricelevel3 2 triệu- 5 triệu
+                  label
+                    input(type='checkbox' name='check_value')
+                    span.pricelevel4 5 triệu - 10 triệu
+                  label
+                    input(type='checkbox' name='check_value')
+                    span.pricelevel5 Lớn hơn 10 triệu
       // Footer
       footer#footer-new
         .footer-top.pad30_0

@@ -307,4 +307,11 @@ $(".mua-chung .tg").click(function(e){
 	$(".mua-chung .tg").hide();
 	$(".mua-chung .xct").show();
 })
+$(".category .middle-category li").click(function(e){
+	$(".category .middle-category li").removeClass("active");
+	$(this).addClass("active");
+	var id = $(this).attr("id");
+	$("."+id).addClass("active");
+
+})
 });

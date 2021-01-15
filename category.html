@@ -36,61 +36,37 @@
           </div>
         </div>
       </header>
-      <div class="box-bottom">
-        <div class="sidebar_thuonghieu bg">
-          <div class="head row align-items-center justify-content-between"><span class="back2"><img src="img/back2.svg"></span>
-            <h2>Lọc sản phẩm</h2><span class="close2"><img src="img/close2.svg"></span>
-          </div>
-          <div class="box-filter box-fiter-price">
-            <h2>Mức giá</h2>
-            <div class="box-filter-4 one">
-              <div class="box-price">
-                <input id="price_from" type="text" name="price_from" placeholder="Từ"><span>-</span>
-                <input id="price_to" type="text" name="price_to" placeholder="100.000">
+      <!--include inc/locsanpham.jade-->
+      <div class="category">
+        <div class="top-category"></div>
+        <div class="middle-category">
+          <ul>
+            <li id="thuonghieu"><a>Thương hiệu<img src="img/arrowdowncate.svg" alt=""></a></li>
+            <li> <a>Loại da<img src="img/arrowdowncate.svg" alt=""></a></li>
+            <li><a>Chức năng<img src="img/arrowdowncate.svg" alt=""></a></li>
+            <li> <a>Sắp xếp<img src="img/arrowdowncate.svg" alt=""></a></li>
+          </ul>
+          <div class="open thuonghieu">
+            <div class="box-filter box-fiter-price">
+              <div class="box-filter-4 one">
+                <div class="ct">
+                  <label>
+                    <input type="checkbox" name="check_value"><span class="pricelevel1">Nhỏ hơn 500.000đ</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="check_value"><span class="pricelevel2">500.000₫ - 2 triệu</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="check_value"><span class="pricelevel3">2 triệu- 5 triệu</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="check_value"><span class="pricelevel4">5 triệu - 10 triệu</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="check_value"><span class="pricelevel5">Lớn hơn 10 triệu</span>
+                  </label>
+                </div>
               </div>
-              <div class="ct">
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel1">Nhỏ hơn 500.000đ</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel2">500.000₫ - 2 triệu</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel3">2 triệu- 5 triệu</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel4">5 triệu - 10 triệu</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel5">Lớn hơn 10 triệu</span>
-                </label>
-              </div>
-            </div>
-            <h2>Sử dụng cho</h2>
-            <div class="box-filter-4 two">
-              <div class="ct">
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel1">Mắt</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel2">Mặt</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel3">Body</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel3">Tay</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel4">Môi</span>
-                </label>
-                <label>
-                  <input type="checkbox" name="check_value"><span class="pricelevel5">Khác</span>
-                </label>
-              </div>
-            </div>
-            <div class="end">
-              <button class="button" type="button">Chọn</button>
             </div>
           </div>
         </div>
