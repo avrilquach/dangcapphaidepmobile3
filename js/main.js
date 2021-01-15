@@ -309,9 +309,29 @@ $(".mua-chung .tg").click(function(e){
 })
 $(".category .middle-category li").click(function(e){
 	$(".category .middle-category li").removeClass("active");
+	$(".category .middle-category .open").removeClass("active");
 	$(this).addClass("active");
 	var id = $(this).attr("id");
 	$("."+id).addClass("active");
-
+	if($(".middle-category ul.top li").hasClass("active")){
+		$(this).find("img").attr("src","img/arrowdowncate2.svg")
+	}
+	else{
+		$(".middle-category ul.top li").find("img").attr("src","img/arrowdowncate3.svg")
+	}
+})
+$(".dm").click(function(e){
+	var id = $(this).attr("class");
+	$("#"+id).addClass("active");
+})
+$(".loc").click(function(e){
+	var id = $(this).attr("class");
+	$("#"+id).addClass("active");
+})
+$(".close2").click(function(e){
+	$(".box-bottom").removeClass("active");
+})
+$(".back2").click(function(e){
+	$(".box-bottom").removeClass("active");
 })
 });

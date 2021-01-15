@@ -4,24 +4,73 @@ html
   body.m
     #wrapper_mobile
       include inc/header.jade
-      //include inc/locsanpham.jade
-      //include inc/danhmuc.jade
+      include inc/locsanpham.jade
+      include inc/danhmuc.jade
       .category
         .top-category
+          .dm
+            h1
+              span Danh mục: 
+              | Chăm sóc da
+              img(src='img/arrowdowncate.svg' alt='')
+          .loc
+            img(src='img/loc.svg' alt='')
+            span Lọc
         .middle-category
           ul.top
             li#thuonghieu
               a Thương hiệu
                 img(src='img/arrowdowncate.svg' alt='')
-            li 
+            li#loaida
               a Loại da
                 img(src='img/arrowdowncate.svg' alt='')
-            li
+            li#chucnang
               a Chức năng
                 img(src='img/arrowdowncate.svg' alt='') 
-            li 
+            li#sapxep 
               a Sắp xếp
-                img(src='img/arrowdowncate.svg' alt='') 
+                img(src='img/arrowdowncate.svg' alt='')
+          .open.sapxep
+            .box-filter
+              .box-filter-2.top
+                .box-filter-3
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Mặc định
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Mới nhất 
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Giảm giá
+          .open.loaida
+            .box-filter
+              .box-filter-2.top
+                .box-filter-3
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Nhờn
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Khô
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Nhạy cảm
+          .open.chucnang
+            .box-filter
+              .box-filter-2.top
+                .box-filter-3
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Chống nắng
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Trị mụn
+                  label
+                    input(type='checkbox' name='check_value')
+                    span Dưỡng da
+              
+
           .open.thuonghieu
             .box-filter.box-fiter-price
               .form 
@@ -96,7 +145,27 @@ html
                     label
                       input(type='checkbox' name='check_value')
                       span Alex
-                  
+      // Products
+      section.products.heading.cate
+        .container
+          .main-products
+            ul
+              -for(i=0;i<6;i++)
+                li.swiper-slide
+                  .inner
+                    img.product(src='img/image2.jpg' alt='')
+                    span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+                    span.star.row.align-items-center
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star3.svg' alt='')
+                      img(src='img/Star2.svg' alt='')
+                      span (20)
+                    span.price.row.align-items-center
+                      span.new 500.000đ
+                      span.old 750.000đ
+                  a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng            
       // Footer
       footer#footer-new
         .footer-top.pad30_0
