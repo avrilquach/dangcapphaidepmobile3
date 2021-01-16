@@ -1,0 +1,156 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			// Header
+			header#header.pad20_0.header-ctdh
+				.nav-top
+					.container
+						.row.align-items-center.justify-content-center
+								a.menu-back2(href='javascript:void(0)')
+									i.icon-arrow-pre
+								span Vip
+			.vip
+				h3 Hạng & điểm hiện tại
+				.hangdiemhientai
+						.input-column2
+							.diem.row.align-items-center
+								span.circle
+								p
+									| Điểm tích lũy:  
+									span 100
+							.hang.row.align-items-center
+								span.circle
+								p
+									| Hạng: 
+									span Thành viên
+						.input-column2
+							.thanhvien
+								.head.row.align-items-center
+									.img
+										img(src='img/user2.svg' alt='')
+									h5 THÀNH VIÊN (Hiện tại)
+								.content
+									p
+										| Tổng giá trị đơn hàng : 
+										span 0 ₫
+									p
+										| Số điểm : 
+										span 0 điểm
+									p
+										| Để được lên hạng bạc bạn cần có : 
+										span 30 điểm - 3.000.000 ₫
+							.uudai
+								.head.row.align-items-center
+									.img
+										img(src='img/uudai2.svg' alt='')
+									h5 ƯU ĐÃI DÀNH RIÊNG CHO BẠN
+								.content
+									p
+										| Được tặng Mã quà tặng nhân dịp sinh 
+										br
+										| nhật khách hàng qua tin nhắn SMS
+				h3 Quy chế lên hạng
+				.quychelenhang
+					.input-column3
+						img(src='img/vang.svg' alt='')
+						h5 hạng vàng
+						p.style Điều kiện lên hạng:
+						p.style2
+							| Tổng giá trị đơn hàng:
+							span 10.000.000 VND
+						p.style2
+							| Số điểm:
+							span 100 điểm
+						.uudai.vang
+							h6 ƯU ĐÃI DÀNH RIÊNG CHO BẠN
+							.item
+								p
+									| Được ưu đãi 
+									span 15% 
+									| khi mua hàng tại Shop (áp dụng đối với sản phẩm nguyên giá).
+								p
+									| Được tặng 
+									span Mã quà tặng 
+									| nhân dịp sinh nhật khách hàng qua tin nhắn SMS.
+								p Được ưu tiên nhận tin về chương trình khuyến mãi hoặc sản phẩm mới của Shop.
+								p Được tham gia các chương trình khuyến mãi dành riêng cho khách hàng VIP.
+								p Được ưu tiên xử lý đơn hàng, chăm sóc đặc biệt.
+					.input-column3
+						img(src='img/bac.svg' alt='')
+						h5 hạng bạc
+						p.style Điều kiện lên hạng:
+						p.style2
+							| Tổng giá trị đơn hàng:
+							span 3.000.000 VND
+						p.style2
+							| Số điểm:
+							span 100 điểm
+						.uudai.bac
+							h6 ƯU ĐÃI DÀNH RIÊNG CHO BẠN
+							.item
+								p
+									| Được ưu đãi 
+									span 10% 
+									| khi mua hàng tại Shop (áp dụng đối với sản phẩm nguyên giá).
+								p
+									| Được tặng 
+									span Mã quà tặng 
+									| nhân dịp sinh nhật khách hàng qua tin nhắn SMS.
+								p Được ưu tiên nhận tin về chương trình khuyến mãi hoặc sản phẩm mới của Shop.
+								p Được tham gia các chương trình khuyến mãi dành riêng cho khách hàng VIP.
+								p Được ưu tiên xử lý đơn hàng, chăm sóc đặc biệt.
+					.input-column3
+						img(src='img/thanhvien.svg' alt='')
+						h5 hạng bạc
+						p.style Điều kiện lên hạng:
+						p.style2 Đã từng thực hiện giao dịch tại Shop (kể cả online và cửa hàng)
+						.uudai
+							h6 ƯU ĐÃI DÀNH RIÊNG CHO BẠN
+							.item
+								p
+									| Được tặng Mã quà tặng nhân dịp sinh nhật khách hàng qua tin nhắn SMS.
+				h3 Lịch sử giao dịch
+				.lichsugiaodich
+					h5 Mua online
+					table(width='100%')
+						thead
+							tr
+								th Mã đơn hàng
+								th Ngày mua
+								th Sản phẩm
+								th Tổng tiền
+						tbody
+							-for(i=0;i<4;i++)
+								tr
+									td 092345677
+									td 20/10/2020
+									td 
+										.div Bộ Sản Phẩm Swissline 3455
+									td 1.900.000 ₫				
+							
+					h5 Mua tại cửa hàng
+					table(width='100%')
+						thead
+							tr
+								th Mã đơn hàng
+								th Ngày mua
+								th Sản phẩm
+								th Tổng tiền
+						tbody
+							-for(i=0;i<4;i++)
+								tr
+									td 092345677
+									td 20/10/2020
+									td 
+										.div Bộ Sản Phẩm Swissline 3455
+									td 1.900.000 ₫																
+																	
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')
