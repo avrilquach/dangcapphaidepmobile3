@@ -1,0 +1,69 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			// Header
+			header#header.pad20_0.header-ctdh
+				.nav-top
+					.container
+						.row.align-items-center.justify-content-center
+								a.menu-back2(href='javascript:void(0)')
+									i.icon-arrow-pre
+								span thông tin tài khoản
+			.thong_tin_tai_khoan.style1.stylett
+				.content_mobile
+					.item
+						.label Họ và tên
+						.forminput
+							input.input(type='text' value='Nguyễn Hồng Nhung')
+					.item.sodienthoai
+						.label Số điện thoại mặc định
+						.forminput
+							input.input(type='text' value='0903456783')
+							span.macdinh.row.align-items-center.justify-content-center Số mặc định
+					.item.sodienthoai2
+						.label Số điện thoại2
+						.forminput
+							input.input(type='text' value='09034566566')
+					.item
+						.label Giới tính
+						.forminput.row.align-items-center
+							.radio
+								input(type='radio' name='gender' checked='')
+								label Nữ
+							.radio
+								input(type='radio' name='gender')
+								label Nam
+					.item
+						.label Ngày sinh
+						.forminput
+							select.day
+								option(value='02') 02
+							select.month
+								option(value='02') 02
+							select.year
+								option(value='1999') 1999
+					.box.style2.row.align-items-center
+						.checkbox
+						p Thay đổi mật khẩu
+					.box2
+						.item
+							.label Mật khẩu mới
+							.forminput
+								input.input(type='text' placeholder='Nhập mật khẩu mới')
+						.item
+							.label Xác nhận mật khẩu mới
+							.forminput
+								input.input(type='text' placeholder='Nhập mật khẩu  mới xác nhận')
+				.button_mobile
+					button(type='button') Cập nhật
+										
+																	
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')

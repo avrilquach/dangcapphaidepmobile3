@@ -334,4 +334,7 @@ $(".close2").click(function(e){
 $(".back2").click(function(e){
 	$(".box-bottom").removeClass("active");
 })
+$(".thong_tin_tai_khoan .box").click(function(e) {
+	$(this).toggleClass("active");
+})
 });
