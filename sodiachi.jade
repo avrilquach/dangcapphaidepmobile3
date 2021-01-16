@@ -1,0 +1,50 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			// Header
+			header#header.pad20_0.header-ctdh
+				.nav-top
+					.container
+						.row.align-items-center.justify-content-center
+								a.menu-back2(href='javascript:void(0)')
+									i.icon-arrow-pre
+								span sổ địa chỉ
+			.so_dia_chi
+				.item
+					.text.row.align-items-center.justify-content-between
+						span.row.align-items-center
+							span.name Lâm Dân
+							span.macdinh.row.align-items-center.justify-content-center Mặc định
+					p.address
+						span Địa chỉ: 
+						| 295 Khu Pho 3, Ha Huy Giap, Phuong Thanh Loc, Quan 12, Phường Thạnh Lộc, Quận 12, Hồ Chí Minh
+					p.phone
+						span Điện thoại:  
+						| 0902934576
+					.row.align-items-center.bottom.justify-content-end
+							a.edit(href='/') Chỉnh sửa
+							a.delete(href='/') Xóa
+				.item
+					.text.row.align-items-center.justify-content-between
+						span
+							span.name Lâm Dân
+					p.address
+						span Địa chỉ: 
+						| 295 Khu Pho 3, Ha Huy Giap, Phuong Thanh Loc, Quan 12, Phường Thạnh Lộc, Quận 12, Hồ Chí Minh
+					p.phone
+						span Điện thoại:  
+						| 0902934576
+					.row.align-items-center.bottom.justify-content-end
+							a.edit(href='/') Chỉnh sửa
+							a.delete(href='/') Xóa
+				.bottom_mobile
+					a.themdiachi.row.justify-content-center.align-items-center(href='/') + Thêm địa chỉ		
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')

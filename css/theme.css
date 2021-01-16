@@ -7461,3 +7461,64 @@ img {
   font-weight: 300;
   color: #000;
 }
+
+.so_dia_chi .item {
+  padding: 15px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+}
+.so_dia_chi .item .text {
+  margin-bottom: 5px;
+}
+.so_dia_chi .item .text span.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-right: 20px;
+}
+.so_dia_chi .item .text span.macdinh {
+  height: 22px;
+  width: 71px;
+  border-radius: 5px;
+  background: #106909;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+.so_dia_chi .item p.address, .so_dia_chi .item p.phone {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 5px;
+}
+.so_dia_chi .item p.address span, .so_dia_chi .item p.phone span {
+  font-weight: 600;
+}
+.so_dia_chi .item .edit {
+  font-size: 16px;
+  font-weight: 300;
+  color: #106909;
+  margin-right: 20px;
+}
+.so_dia_chi .item .delete {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.so_dia_chi .bottom {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.so_dia_chi .bottom_mobile {
+  padding: 0 10px 10px 10px;
+}
+.so_dia_chi .themdiachi {
+  background: #FFFFFF;
+  border: 1px dashed #106909;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #106909;
+}
