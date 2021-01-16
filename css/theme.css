@@ -6722,6 +6722,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+}
+.button_mobile .button2 {
+  background: #FF326C;
 }
 
 .arrow-right-mobile {
@@ -7276,4 +7280,49 @@ img {
   font-size: 14px;
   font-weight: 300;
   color: #000000;
+}
+
+.thongtindonhang .top {
+  padding: 0 15px;
+  background: #fff;
+}
+.thongtindonhang .top .item {
+  padding: 15px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+.thongtindonhang .top .item span.head {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.thongtindonhang .top .item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #404040;
+}
+.thongtindonhang .top .item2 {
+  padding: 15px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+.thongtindonhang .top .item2 span.head img {
+  margin-right: 10px;
+}
+.thongtindonhang .top .item2 ul {
+  margin-left: 25px;
+}
+.thongtindonhang .top .item2 ul li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.thongtindonhang .top .item2 p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #404040;
+  margin-left: 25px;
+}
+.thongtindonhang .top .item3 {
+  padding: 15px 0;
 }

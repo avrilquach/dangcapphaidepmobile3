@@ -1,0 +1,61 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			// Header
+			header#header.pad20_0.header-ctdh
+				.nav-top
+					.container
+						.row.align-items-center.justify-content-center
+								a.menu-back2(href='javascript:void(0)')
+									i.icon-arrow-pre
+								span thông tin đơn hàng
+			.thongtindonhang
+				.top
+					.item
+						span.head
+							| Đơn hàng đã hoàn thành 
+						p Cảm ơn bạn đã đánh . Bạn có thể chỉnh sửa đánh giá 1 lần trước 12/02/2020
+					.item2
+						span.head
+							img(src="img/thongtindonhang1.svg",alt="")
+							| Thông tin vận chuyển
+						ul
+							li NowShip - VN45643132132
+							li Giao hàng thành công
+						p 20-01/2021 15:20:45
+					.item3
+						span.head
+							img(src="img/thongtindonhang2.svg",alt="")
+							| Địa chỉ nhận hàng
+						p Hồng Anh
+							br 
+							| (+84)0906847562
+							br
+							| 298 Nguyen Oanh, Phường 17, Quận Gò Vấp
+				.middle
+					-for(i=0;i<5;i++)
+						.item
+							.row
+								.img
+									img(src="img/quanlydonhang1.jpg",alt="")
+								.text
+									span.title Thuốc Mọc Dài Và Làm Rậm Lông Mi Revitalash Advanced 2.0ml
+									span.number 1
+										span x  
+										span.price 10.900.000 ₫
+					.button_mobile
+						button(type="button").button2 Mua lại
+
+						
+		
+
+		
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')
