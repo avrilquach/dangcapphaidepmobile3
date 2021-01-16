@@ -7175,3 +7175,105 @@ img {
   opacity: 1;
   transform: scale(1);
 }
+
+.quan_ly_don_hang .middle .item {
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 0 15px;
+}
+.quan_ly_don_hang .middle .item .row {
+  padding: 15px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+.quan_ly_don_hang .middle .item .row:last-child {
+  border-bottom: none;
+}
+.quan_ly_don_hang .middle .item .xt {
+  font-size: 14px;
+  font-weight: 300;
+  color: #565656;
+}
+.quan_ly_don_hang .middle .item .thanhtien span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #565656;
+}
+.quan_ly_don_hang .middle .item .thanhtien span.tt {
+  font-weight: 300;
+  color: #000000;
+  font-size: 14px;
+}
+.quan_ly_don_hang .middle .item .thanhtien span.tt span {
+  color: #FF326C;
+}
+.quan_ly_don_hang .middle .item .danhgia span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #565656;
+}
+.quan_ly_don_hang .middle .item .danhgia a {
+  background: #FF326C;
+  border-radius: 5px;
+  width: 105px;
+  height: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+}
+.quan_ly_don_hang .middle .item .xacnhan {
+  color: #106909;
+  font-size: 14px;
+  font-weight: 300;
+}
+.quan_ly_don_hang .middle .item .xacnhan img {
+  margin-right: 10px;
+}
+.quan_ly_don_hang .middle .item .img {
+  width: 75px;
+  height: 65px;
+  margin-right: 10px;
+}
+.quan_ly_don_hang .middle .item .text {
+  width: calc(100% - 85px);
+}
+.quan_ly_don_hang .middle .item .text span.title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.quan_ly_don_hang .middle .item .text span.number {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #868686;
+}
+.quan_ly_don_hang .middle .item .text span.number span:nth-child(1) {
+  margin: 0 20px;
+}
+.quan_ly_don_hang .middle .item .text span.number span.price {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.quan_ly_don_hang .top {
+  background: #fff;
+  margin-bottom: 10px;
+}
+.quan_ly_don_hang .top ul {
+  padding: 0 15px;
+}
+.quan_ly_don_hang .top ul li {
+  width: auto;
+  padding: 15px 0;
+  margin-right: 15px;
+}
+.quan_ly_don_hang .top ul li:hover {
+  border-bottom: 1px solid #FF326C;
+}
+.quan_ly_don_hang .top ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
