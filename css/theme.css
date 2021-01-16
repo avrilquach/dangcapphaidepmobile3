@@ -185,6 +185,13 @@ img {
   font-size: 20px;
   color: #000;
 }
+#wrapper_mobile #header.header-ctdh .menu-back2 {
+  font-size: 20px;
+  color: #000;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
 #wrapper_mobile #header.header-ctdh .menu-right span {
   width: 5px;
   height: 5px;
@@ -6624,4 +6631,81 @@ img {
 }
 .category .middle-category ul.top li.active .open {
   display: block;
+}
+
+.top_account .boxmagiamgia {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.top_account .boxmagiamgia .img {
+  margin-right: 10px;
+}
+.top_account .boxmagiamgia .text span.t {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.top_account .boxmagiamgia .text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.top_account .box {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+}
+.top_account .box .text span.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+}
+.top_account .box .text span.email {
+  font-size: 14px;
+  font-weight: 300;
+  color: #818181;
+  display: block;
+}
+.top_account .box .text span.member {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.top_account .box .img {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(180deg, #E9E9E9 0%, rgba(158, 158, 158, 0) 39.58%, #E9E9E9 80.21%, rgba(158, 158, 158, 0) 100%);
+  border: 0.5px solid #E3E3E3;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.top_account .box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.top_account .box p span {
+  font-weight: 600;
+  display: block;
+}
+.top_account ul {
+  background: #fff;
+}
+.top_account ul li {
+  padding: 15px;
+}
+.top_account ul li .img {
+  width: 50px;
+  text-align: center;
+}
+.top_account ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.arrow-right-mobile {
+  background: url("../img/arrright_mobile.svg") right center no-repeat;
 }
