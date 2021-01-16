@@ -6952,11 +6952,9 @@ img {
   padding: 10px 15px;
 }
 
-.thong_tin_tai_khoan {
-  background: #fff;
-}
 .thong_tin_tai_khoan .content_mobile {
-  padding: 15px 15px 0 15px;
+  padding: 15px;
+  background: #fff;
 }
 .thong_tin_tai_khoan .box {
   position: relative;
@@ -7155,7 +7153,7 @@ img {
 }
 .style2 [type=radio]:checked + label:after {
   content: "";
-  background: url("../img/check.svg") no-repeat;
+  background: url("../img/arrow2.svg") no-repeat;
   width: 12px;
   height: 9px;
   position: absolute;

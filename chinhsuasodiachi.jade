@@ -1,0 +1,66 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		#wrapper_mobile
+			// Header
+			header#header.pad20_0.header-ctdh
+				.nav-top
+					.container
+						.row.align-items-center.justify-content-center
+								a.menu-back2(href='javascript:void(0)')
+									i.icon-arrow-pre
+								span chỉnh sửa sổ địa chỉ
+			.thong_tin_tai_khoan.style1.stylett
+				.content_mobile
+					.item
+						.label Họ và tên
+						.forminput
+							input.input(type='text' value='Nguyễn Hồng Nhung')
+					.item
+						.label Số điện thoại
+						.forminput
+							input.input(type='text' value='09034566566')
+					.item
+						.label Tỉnh / Thành Phố
+						.forminput
+							select.input
+								option(value='Hồ Chí Minh') Hồ Chí Minh
+					.item
+						.label Quận / Huyện
+						.forminput
+							select.input
+								option(value='Gò Vấp') Gò Vấp
+					.item
+						.label Phường / Xã
+						.forminput
+							select.input
+								option(value='Phường 17') Phường 17
+					.item
+						.label Địa chỉ
+						.forminput
+							input.input(type='text' value='245/23 Lê Đức Thọ')
+					.item
+						.label Loại địa chỉ
+						.forminput
+							.radio
+								input(type='radio' name='loaidiachi' checked='')
+								label Nhà riêng / Chung cư
+							.radio
+								input(type='radio' name='loaidiachi')
+								label Cơ quan / Công ty
+					.style2.button
+						input(type='radio' name='addaddress')
+						label Sử dụng địa chỉ này làm mặc định
+				.button_mobile
+					button(type='button') Cập nhật
+
+										
+																	
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/owl.carousel.min.js')
+		script(type='text/javascript', src='js/jquery.lazy.js')
+		script(type='text/javascript', src='js/swiper.js')
+		script(type='text/javascript', src='js/jquery.magnific-popup.js')
+		script(type='text/javascript', src='js/main.js')
