@@ -8148,3 +8148,54 @@ img {
   width: 45px;
   height: 45px;
 }
+
+.profile {
+  background: linear-gradient(180deg, #FFF1F1 0%, #FFFFFF 100%);
+  margin-bottom: 10px;
+}
+.profile .top2 .img {
+  margin-bottom: 10px;
+}
+.profile .top2 .img img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 5px solid #FFFFFF;
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
+}
+.profile .top2 .avatar {
+  text-align: center;
+}
+.profile .top2 .text span.name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  display: block;
+}
+.profile .top2 .text span.address {
+  font-weight: 300;
+  font-size: 16px;
+  color: #4A4A4A;
+  display: block;
+}
+.profile .top2 .text span.member {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  display: block;
+}
+.profile .bottom {
+  border-top: 0.5px solid #D6D6D6;
+  padding: 20px 0;
+}
+.profile .bottom span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  width: 33.33%;
+  text-align: center;
+}
+.profile .bottom span.daphop {
+  border-left: 0.5px solid #D1D1D1;
+  border-right: 0.5px solid #D1D1D1;
+}
