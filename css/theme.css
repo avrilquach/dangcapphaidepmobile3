@@ -7716,3 +7716,57 @@ img {
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
+.san_pham_da_xem .item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.san_pham_da_xem .left {
+  width: 96px;
+  height: 96px;
+  margin-right: 10px;
+}
+.san_pham_da_xem .right {
+  width: calc(100% - 106px);
+}
+.san_pham_da_xem .right .text span.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+  display: block;
+}
+.san_pham_da_xem .right .text span.date {
+  font-size: 14px;
+  font-weight: 300;
+  color: #939393;
+  margin-bottom: 5px;
+}
+.san_pham_da_xem .right .text span.star {
+  margin-bottom: 5px;
+}
+.san_pham_da_xem .right .text span.star img {
+  margin: 0 3px;
+}
+.san_pham_da_xem .right .text .note {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.san_pham_da_xem .right .text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+.san_pham_da_xem .right p.approve {
+  font-size: 14px;
+  font-weight: 400;
+  color: #106909;
+}
+.san_pham_da_xem .right p.none {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A5A5A5;
+}
