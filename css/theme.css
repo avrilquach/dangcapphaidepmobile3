@@ -7899,3 +7899,252 @@ img {
   background: linear-gradient(90.33deg, #FEADA6 3.36%, #F5576C 97.72%);
   border-radius: 5px;
 }
+
+.feed .binhluan .list .personal, .feed .binhluan .list .reply {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.feed .binhluan .list .personal .img, .feed .binhluan .list .reply .img {
+  width: 45px;
+  height: 45px;
+}
+.feed .binhluan .list .personal .text, .feed .binhluan .list .reply .text {
+  width: calc(100% - 60px);
+  margin-left: 15px;
+}
+.feed .binhluan .list .personal .text .bg, .feed .binhluan .list .reply .text .bg {
+  background: #F0F2F5;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.feed .binhluan .list .personal .text .bg .name, .feed .binhluan .list .reply .text .bg .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.feed .binhluan .list .personal .text .bg .bl, .feed .binhluan .list .reply .text .bg .bl {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.feed .binhluan .list .personal .text .options, .feed .binhluan .list .reply .text .options {
+  margin-top: 5px;
+}
+.feed .binhluan .list .personal .text .options a, .feed .binhluan .list .reply .text .options a {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+.feed .binhluan .form {
+  display: flex;
+  padding: 15px 0;
+}
+.feed .binhluan .form .name {
+  width: 45px;
+  height: 45px;
+  background: #DBDBDB;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #636363;
+}
+.feed .binhluan .form .options {
+  width: calc(100% - 60px);
+  margin-left: 15px;
+  position: relative;
+}
+.feed .binhluan .form .options .file {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 45px;
+}
+.feed .binhluan .form .options .file #avatar {
+  opacity: 0;
+}
+.feed .binhluan .form .options .file img {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+}
+.feed .binhluan .form .options input[type=text] {
+  width: 100%;
+  background: #F0F2F5;
+  border-radius: 40px;
+  height: 45px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  color: #929292;
+  border: none;
+  padding: 0 10px;
+}
+.feed .noibattrongtuan {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.feed .noibattrongtuan h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feed .noibattrongtuan ul li {
+  width: 132px;
+  margin-right: 10px;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
+  border: 0.5px solid #D4D4D4;
+  border-radius: 5px;
+}
+.feed .noibattrongtuan ul li span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px;
+  height: 78px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
+}
+.feed .top {
+  background: #fff;
+  margin-bottom: 10px;
+}
+.feed .top ul {
+  padding: 0 15px;
+}
+.feed .top ul li {
+  width: 33.33%;
+  margin-right: 15px;
+}
+.feed .top ul li:hover a {
+  border-bottom: 1px solid #FF326C;
+}
+.feed .top ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  padding: 15px 0;
+  display: inline-block;
+}
+.feed .center .baiviet {
+  background: #FFFFFF;
+  border: 0.5px solid #ececec;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.feed .center .baiviet .picture {
+  padding: 10px 0;
+  clear: both;
+  margin: 0 -15px;
+}
+.feed .center .baiviet .picture .col2 {
+  width: 49%;
+}
+.feed .center .baiviet .picture .col2.last {
+  position: relative;
+}
+.feed .center .baiviet .picture .col2.last::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+.feed .center .baiviet .picture .col2.last .more {
+  font-size: 50px;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  color: #fff;
+  z-index: 88;
+  text-align: center;
+}
+.feed .center .baiviet .picture .row {
+  margin-bottom: 2%;
+}
+.feed .center .baiviet .picture .row:last-child {
+  margin-bottom: 0;
+}
+.feed .center .baiviet .count {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 15px;
+  margin: 0 -15px;
+}
+.feed .center .baiviet .count .like {
+  margin-right: 20px;
+}
+.feed .center .baiviet .count span {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #414141;
+}
+.feed .center .baiviet .content p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  line-height: 25px;
+  padding: 10px 0;
+}
+.feed .center .baiviet .content ul li {
+  float: left;
+  margin-right: 10px;
+}
+.feed .center .baiviet .content ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+.feed .center .baiviet .top {
+  margin-bottom: 0;
+}
+.feed .center .baiviet .top .title {
+  width: calc(100% - 54px);
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.feed .center .baiviet .top .title .name {
+  font-weight: 600;
+}
+.feed .center .baiviet .top .title span.date {
+  font-weight: 300;
+  font-size: 14px;
+  color: #878787;
+  margin-left: 20px;
+}
+.feed .center .baiviet .top .avatar img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.feed .center .baiviet .top .nameproduct {
+  background: #FFFFFF;
+  border: 0.5px solid #ececec;
+  border-radius: 5px;
+  padding: 5px;
+  height: 57px;
+}
+.feed .center .baiviet .top .nameproduct img {
+  width: 45px;
+  height: 45px;
+}
