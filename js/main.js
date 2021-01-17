@@ -337,4 +337,19 @@ $(".back2").click(function(e){
 $(".thong_tin_tai_khoan .box").click(function(e) {
 	$(this).toggleClass("active");
 })
+$(".san_pham_da_xem_2 .write").click(function(e) {
+	$(".bgpopup").show();
+	$(".popup").show();
+})
+$(".popup .close_popup").click(function(e) {
+	$(".bgpopup").hide();
+	$(".popup").hide();
+})
+$(".bgpopup").click(function(e) {
+	$(".bgpopup").hide();
+	$(".popup").hide();
+})
+$(".sanphamdaxem a.xt").click(function(e){
+	$(".sanphamdaxem .main-products ul").append("<li class='swiper-slide'> <div class='inner'><img class='product' src='img/image2.jpg' alt=''><span class='title'>Sữa rửa mặt dành cho nam giới Maria Galland 900...</span><span class='star row align-items-center'><img src='img/Star3.svg' alt=''><img src='img/Star3.svg' alt=''><img src='img/Star3.svg' alt=''><img src='img/Star3.svg' alt=''><img src='img/Star2.svg' alt=''><span>(20)</span></span><span class='price row align-items-center'><span class='new'>500.000đ</span><span class='old'>750.000đ</span></span></div><a class='addtocart row justify-content-center align-items-center'>Thêm giỏ hàng            </a> </li>")
+})
 });

@@ -6047,6 +6047,7 @@ img
 		width: 100%
 		border-top-left-radius: 10px
 		border-top-right-radius: 10px
+		left: 0
 		.head
 			padding: 15px
 			border-bottom: 0.5px solid #A7A7A7
@@ -7253,8 +7254,115 @@ img
 			font-size: 12px
 			font-weight: 400
 			text-transform: uppercase
+.bgpopup
+	background: rgba(0, 0, 0, 0.6)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	right: 0
+	z-index: 12
+	display: none
 
+.popup
+	position: absolute
+	width: 100% 
+	left: 0
+	bottom: 0
+	right: 0
+	margin: 0 auto
+	border: 1px solid #E0E0E0
+	background: #fff
+	padding: 16px
+	z-index: 14
+	border-radius: 5px 5px 0px 0px
+	display: none
 
+	.close_popup
+		display: flex
+		justify-content: flex-end
+		cursor: pointer
 
+	button
+		&#capture
+			background: #FFFFFF
+			border: 1px solid #000000
+			border-radius: 5px
+			width: 49%
+			height: 40px
+			outline: none
 
-						
+			img
+				margin-right: 10px
+
+			span
+				font-size: 16px
+				font-weight: 300
+				color: #000000
+
+		&#review
+			background: #000000
+			border-radius: 5px
+			width: 49%
+			height: 40px
+			font-size: 16px
+			font-weight: 400
+			color: #fff
+			border: 1px solid #000000
+			outline: none
+	.choose-star
+		margin-bottom: 15px
+	h4
+		font-size: 20px
+		font-weight: 600
+		color: #000
+		text-align: center
+		margin-bottom: 15px
+
+	.star
+		margin-bottom: 30px
+
+		img
+			margin: 0 15px
+
+	#textarea
+		background: #FFFFFF
+		border: 1px solid #D4D4D4
+		border-radius: 5px
+		color: #A2A2A2
+		font-size: 16px
+		font-weight: 300
+		padding: 10px
+		width: 100%
+		outline: none
+		height: 130px
+		margin-bottom: 20px
+
+		&::placeholder
+			color: #A2A2A2
+			font-size: 16px
+			font-weight: 300
+
+	.top
+		margin-bottom: 20px
+		padding-bottom: 30px
+		border-bottom: 1px solid #E0E0E0
+
+		img
+			width: 65px
+			height: 65px
+			margin-right: 10px
+
+		.title
+			width: 185px
+			display: block
+			overflow: hidden
+			height: 42px
+.sanphamdaxem
+	a.xt
+		font-size: 16px
+		font-weight: 300
+		color: #000000
+		text-decoration: underline
+		margin-bottom: 10px

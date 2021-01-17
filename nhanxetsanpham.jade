@@ -52,7 +52,37 @@ html
 						img(src='img/image4.jpg' alt='')
 						span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
 					a.write.row.justify-content-center.align-items-center Viết nhận xét
-
+			//Popup
+			.bgpopup
+			.popup
+				span.close_popup
+					img(src='img/close2.svg', alt='')
+				.top.row.align-items-center
+					img(src='img/image4.jpg', alt='')
+					span.title Image Clear Cell Salicylic Gel Cleanser 177ml.....
+				.review.reviewvote
+					h4 Vui lòng đánh giá
+					.row.align-items-center.justify-content-center
+						.choose-star
+							input(name='rating' value='3' type='hidden')
+							ul
+								li(data-value='5')
+									span Tuyệt vời quá
+								li(data-value='4')
+									span Rất tốt
+								li.active(data-value='3')
+									span Bình thường
+								li(data-value='2')
+									span Tạm được
+								li(data-value='1')
+									span Không thích
+					textarea#textarea(name="", cols="30", rows="10" placeholder='Hãy chia sẻ cảm nhận, đánh giá của bạn về sản phẩm này nhé.')
+					.row.align-items-center.justify-content-between
+						button(type="button" id="capture").row.align-items-center.justify-content-center
+							img(src='img/capture.svg', alt='')
+							span Thêm ảnh
+						button(type="button" id="review").row.align-items-center.justify-content-center
+							span Viết đánh giá
 										
 																	
 		script(type='text/javascript', src='js/jquery.min.js')
